@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 4071463830363502}
   - component: {fileID: 33092926340133414}
   - component: {fileID: 23100547221564144}
+  - component: {fileID: 2585845964184391076}
   m_Layer: 0
   m_Name: RPG7
   m_TagString: Untagged
@@ -168,6 +169,132 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2585845964184391076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411512464560164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3c41b77c102055459d375ae65468607, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <WeaponPositionDataProperty>k__BackingField:
+    <Position>k__BackingField: {x: -0.052, y: 0.136, z: 0.028}
+    <RotationEuler>k__BackingField: {x: 77.022, y: 138.177, z: 223.738}
+  <WeaponAttributesProperty>k__BackingField:
+    <FireRateUpgradeLevelMap>k__BackingField:
+      reorderableList:
+        canAdd: 1
+        canRemove: 1
+        draggable: 1
+        expandable: 1
+        multipleSelection: 1
+        isExpanded: 0
+        label:
+          m_Text: Keys
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+        headerHeight: 18
+        footerHeight: 13
+        slideEasing: 0.15
+        verticalSpacing: 2
+        showDefaultBackground: 1
+        elementDisplayType: 0
+        elementNameProperty: 
+        elementNameOverride: 
+        elementIcon: {fileID: 0}
+      reqReferences: {fileID: 0}
+      isExpanded: 0
+      _keyValues: 
+      _keys: 
+      _values: []
+    <BulletDamageUpgradeLevelMap>k__BackingField:
+      reorderableList:
+        canAdd: 1
+        canRemove: 1
+        draggable: 1
+        expandable: 1
+        multipleSelection: 1
+        isExpanded: 0
+        label:
+          m_Text: Keys
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+        headerHeight: 18
+        footerHeight: 13
+        slideEasing: 0.15
+        verticalSpacing: 2
+        showDefaultBackground: 1
+        elementDisplayType: 0
+        elementNameProperty: 
+        elementNameOverride: 
+        elementIcon: {fileID: 0}
+      reqReferences: {fileID: 0}
+      isExpanded: 0
+      _keyValues: 
+      _keys: 
+      _values: []
+    <AttackFormationUpgradeLevelMap>k__BackingField:
+      reorderableList:
+        canAdd: 1
+        canRemove: 1
+        draggable: 1
+        expandable: 1
+        multipleSelection: 1
+        isExpanded: 0
+        label:
+          m_Text: Keys
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+        headerHeight: 18
+        footerHeight: 13
+        slideEasing: 0.15
+        verticalSpacing: 2
+        showDefaultBackground: 1
+        elementDisplayType: 0
+        elementNameProperty: 
+        elementNameOverride: 
+        elementIcon: {fileID: 0}
+      reqReferences: {fileID: 0}
+      isExpanded: 0
+      _keyValues: 
+      _keys: 
+      _values: []
+    <BouncingBulletUpgradeLevelMap>k__BackingField:
+      reorderableList:
+        canAdd: 1
+        canRemove: 1
+        draggable: 1
+        expandable: 1
+        multipleSelection: 1
+        isExpanded: 0
+        label:
+          m_Text: Keys
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+        headerHeight: 18
+        footerHeight: 13
+        slideEasing: 0.15
+        verticalSpacing: 2
+        showDefaultBackground: 1
+        elementDisplayType: 0
+        elementNameProperty: 
+        elementNameOverride: 
+        elementIcon: {fileID: 0}
+      reqReferences: {fileID: 0}
+      isExpanded: 0
+      _keyValues: 
+      _keys: 
+      _values: []
+  <WeaponHolderRigDataProperty>k__BackingField:
+    <RigId>k__BackingField: 
+    <LeftHandIKTargetPosition>k__BackingField: {x: 0, y: 0, z: 0}
+    <LeftHandIKTargetRotationEuler>k__BackingField: {x: 0, y: 0, z: 0}
+    <RightHandIKTargetPosition>k__BackingField: {x: 0, y: 0, z: 0}
+    <RightHandIKTargetRotationEuler>k__BackingField: {x: 0, y: 0, z: 0}
 --- !u!1 &1922950281920760
 GameObject:
   m_ObjectHideFlags: 0
