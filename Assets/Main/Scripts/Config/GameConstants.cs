@@ -11,6 +11,7 @@ public static class GameConstants
         {PlayerController.State.RunningAndShooting, "run" },
         {PlayerController.State.Happy, "happy" },
         {PlayerController.State.Sad, "sad" },
+        {PlayerController.State.Dead, "dead" },
     };
 
 
