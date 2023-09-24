@@ -1,4 +1,6 @@
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Animations.Rigging;
 
@@ -9,14 +11,15 @@ public class PlayerController : MonoBehaviour
         Idle,
         RunningAndShooting,
         Happy,
-        Sad
+        Sad,
+        Dead
     }
 
     public State PlayerState { get; private set; }
     [SerializeField] private MovementHandler movementHandler;
     [SerializeField] private Animator animator;
     [SerializeField] private Rig rig;
-
+    [SerializeField] private TwoBoneIKConstraint leftHandIK, rightHandIk;
     public void Initialize()
     {
         PlayerState = State.Idle;
@@ -27,8 +30,8 @@ public class PlayerController : MonoBehaviour
     {
         Initialize();
         animator.SetTrigger(GameConstants.PlayerAnimatorStateMap[PlayerState]);
-        rig.weight = 0;
-        StartCoroutine(WaitAndStartRunning());
+        rig.weight = 1;
+        //StartCoroutine(WaitAndStartRunning());
     }
 
     private IEnumerator WaitAndStartRunning()
@@ -37,6 +40,11 @@ public class PlayerController : MonoBehaviour
         PlayerState = State.RunningAndShooting;
         animator.SetTrigger(GameConstants.PlayerAnimatorStateMap[PlayerState]);
         rig.weight = 1;
+    }
+
+    public void Die()
+    {
+        EventManager.TriggerEvent(EventManager.EventSignature.OnPlayerDefeated, this);
     }
 
     private void Update()
