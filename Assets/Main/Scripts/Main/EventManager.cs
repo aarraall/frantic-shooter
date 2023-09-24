@@ -11,6 +11,7 @@ public class EventManager
         OnGameEnd, 
         OnGamePause, 
         OnGameResume,
+        OnLevelStart,
         OnPlayerDefeated,
         OnPlayerWin,
     }
