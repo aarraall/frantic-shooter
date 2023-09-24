@@ -1,38 +1,48 @@
 using UnityEngine;
 using PathCreation;
-
+using PathCreation.Examples;
+using System;
 
 public class MovementHandler : MonoBehaviour
 {
-    [field : SerializeField] public PathCreator PathCreator { get; private set; }
-    [SerializeField] Joystick joystick;
     [SerializeField] float speed;
-    [SerializeField] EndOfPathInstruction endOfPathInstruction;
 
-    float _distanceTravelled;
     Transform _transform;
 
     Vector3 _joystickOutput;
-    private float horizontalSpeed = 5;
+    private float horizontalSpeed = 1;
+    float leftClamp = -4f;
+    float rightClamp = 4f;
+    Joystick _joystick;
 
-    private void Start()
+
+    public void Initialize(Joystick inputController)
     {
+        _joystick = inputController;
         _transform = transform;
-        _transform.position = PathCreator.path.GetPoint(0); ;
-        _transform.rotation = PathCreator.path.GetRotation(0);
-        joystick.OnFingerTravel += OnJoystickTravel;
+        _joystick.OnFingerTravel += OnJoystickTravel;
+        _joystick.OnFingerUp += OnFingerUp;
+    }
+
+
+    private void OnFingerUp()
+    {
+        _joystickOutput = Vector3.zero;
     }
 
     private void OnJoystickTravel()
     {
-        _joystickOutput += horizontalSpeed * Time.deltaTime * new Vector3(-joystick.Horizontal, 0, 0);
+        var joyStickHorizontalOutput = _joystick.Horizontal;
+        _joystickOutput = horizontalSpeed * Time.deltaTime * new Vector3(joyStickHorizontalOutput, 0, 0);
     }
 
     public void MoveAlongWithPath()
     {
-        _distanceTravelled += speed * Time.deltaTime;
-        var targetPos = PathCreator.path.GetPointAtDistance(_distanceTravelled, endOfPathInstruction) + _joystickOutput;
-        var targetRot = PathCreator.path.GetRotationAtDistance(_distanceTravelled, endOfPathInstruction);
-        _transform.SetPositionAndRotation(targetPos, targetRot) ;
+        Vector3 distanceTravelled = speed * Time.deltaTime * Vector3.forward;
+
+        _transform.position += distanceTravelled + _joystickOutput;
+        var clampedX = transform.position.x;
+        clampedX = Mathf.Clamp(clampedX, leftClamp, rightClamp);
+
     }
 }
