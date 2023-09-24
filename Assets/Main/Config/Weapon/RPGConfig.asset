@@ -140,10 +140,10 @@ MonoBehaviour:
       _values: 0000000002000000ffffffff
   <WeaponPositionDataProperty>k__BackingField:
     <Position>k__BackingField: {x: -0.052, y: 0.136, z: 0.028}
-    <RotationEuler>k__BackingField: {x: 77.022, y: 138.177, z: 223.738}
+    <RotationEuler>k__BackingField: {x: 80.542046, y: 89.094574, z: 185.50797}
   <WeaponHolderRigDataProperty>k__BackingField:
-    <RigId>k__BackingField: 
     <LeftHandIKTargetPosition>k__BackingField: {x: -0.254, y: 1.239, z: 0.961}
     <LeftHandIKTargetRotationEuler>k__BackingField: {x: -41.59, y: 156.923, z: -340.885}
     <RightHandIKTargetPosition>k__BackingField: {x: -0.647, y: 1.002, z: 1.097}
     <RightHandIKTargetRotationEuler>k__BackingField: {x: 81.80298, y: 90.313194, z: 83.87144}
+  <BulletPrefab>k__BackingField: {fileID: 9050773002423567077, guid: a9e63abe962cc454cb8126fcbd959198, type: 3}

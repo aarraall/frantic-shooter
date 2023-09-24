@@ -19,7 +19,7 @@ MonoBehaviour:
       draggable: 1
       expandable: 1
       multipleSelection: 1
-      isExpanded: 1
+      isExpanded: 0
       label:
         m_Text: Keys
         m_Image: {fileID: 0}
@@ -34,7 +34,7 @@ MonoBehaviour:
       elementNameOverride: 
       elementIcon: {fileID: 0}
     reqReferences: {fileID: 0}
-    isExpanded: 1
+    isExpanded: 0
     _keyValues: 00000000010000000200000003000000
     _keys: 00000000010000000200000003000000
     _values:
@@ -140,10 +140,10 @@ MonoBehaviour:
       _values: 0000000002000000ffffffff
   <WeaponPositionDataProperty>k__BackingField:
     <Position>k__BackingField: {x: -0.083, y: 0.137, z: 0.036}
-    <RotationEuler>k__BackingField: {x: 77.212, y: -224.149, z: -124.99}
+    <RotationEuler>k__BackingField: {x: 82.21593, y: 95.54619, z: 195.09181}
   <WeaponHolderRigDataProperty>k__BackingField:
-    <RigId>k__BackingField: 
     <LeftHandIKTargetPosition>k__BackingField: {x: -0.65602607, y: 0.74099994, z: 1.1339992}
     <LeftHandIKTargetRotationEuler>k__BackingField: {x: 318.4103, y: 156.9226, z: 19.135061}
     <RightHandIKTargetPosition>k__BackingField: {x: -0.647, y: 1.002, z: 1.097}
     <RightHandIKTargetRotationEuler>k__BackingField: {x: 81.80298, y: 90.313194, z: 83.87144}
+  <BulletPrefab>k__BackingField: {fileID: 9050773002423567077, guid: a9e63abe962cc454cb8126fcbd959198, type: 3}
