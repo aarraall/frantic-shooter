@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 431721102069075946}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 170}
+  m_LocalPosition: {x: 0, y: 0, z: 170}
   m_LocalScale: {x: 10, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -330,6 +330,13 @@ MonoBehaviour:
   playerSpawnPoint: {fileID: 7459038577342911341}
   finishPoint: {fileID: 3390401633959485693}
   playerPrefab: {fileID: 3585306412693042151, guid: 05d75327bdec890479078eaff1f8a02a, type: 3}
+  <UpgradeTriggerPercentages>k__BackingField:
+  - 0.05
+  - 0.18
+  - 0.31
+  - 0.44
+  - 0.57
+  - 0.7
 --- !u!1 &3094782064947708596
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,7 +472,7 @@ Transform:
   m_GameObject: {fileID: 5390861918878258039}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

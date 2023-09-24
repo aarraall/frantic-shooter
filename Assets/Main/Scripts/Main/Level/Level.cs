@@ -25,6 +25,8 @@ public class Level : MonoBehaviour
     {
         _playerInstance = Instantiate(playerPrefab, transform);
         _playerInstance.transform.SetPositionAndRotation(playerSpawnPoint.position, Quaternion.identity);
+        followCam.Follow = _playerInstance.transform;
+        followCam.LookAt = _playerInstance.transform;
         _playerInstance.Initialize(inputController);
         _distanceBetweenStartAndFinish = Vector3.Distance(playerSpawnPoint.position, finishPoint.position);
         _state = State.Initialized;

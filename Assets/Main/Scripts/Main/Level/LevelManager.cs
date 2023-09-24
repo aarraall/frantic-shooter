@@ -10,12 +10,15 @@ public class LevelManager : MonoBehaviour
     [SerializeField] Joystick joystick;
     [SerializeField] CinemachineVirtualCameraBase followCam;
 
+    public static LevelManager Instance; 
+
     Level _activeLevel;
 
     int _initialLevel = 1;
 
-    private void Start()
+    private void Awake()
     {
+        Instance = this;
         Subscribe();
         LoadLevel();
     }
@@ -24,6 +27,7 @@ public class LevelManager : MonoBehaviour
     {
         Unsubscribe();
     }
+
     private void Subscribe()
     {
         Unsubscribe();
@@ -40,6 +44,7 @@ public class LevelManager : MonoBehaviour
     private void OnPlayerLose(object obj)
     {
         // Show defeat popup and restart level
+
     }
 
     private void OnPlayerWin(object obj)
@@ -52,7 +57,16 @@ public class LevelManager : MonoBehaviour
         var levelToLoad = levelDB.LevelConfigMap[_initialLevel];
         var levelPref = levelToLoad.LevelPrefab;
         _activeLevel = Instantiate(levelPref);
-        _activeLevel.Initialize(joystick);
+        _activeLevel.Initialize(joystick, followCam);
+        PopupManager.Instance.OpenPopup(typeof(TapToPlayPopup));
+    }
+
+    public void StartLevel()
+    {
+        if (_activeLevel == null) return;
+
+        _activeLevel.StartLevel();
+        EventManager.TriggerEvent(EventManager.EventSignature.OnLevelStart);
     }
 
     public void LoadNextLevel()
