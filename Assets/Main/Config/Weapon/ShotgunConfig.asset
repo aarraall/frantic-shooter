@@ -60,9 +60,9 @@ MonoBehaviour:
         elementIcon: {fileID: 0}
       reqReferences: {fileID: 0}
       isExpanded: 1
-      _keyValues: 010000000200000003000000
-      _keys: 010000000200000003000000
-      _values: 010000000200000003000000
+      _keyValues: 0100000002000000
+      _keys: 0100000002000000
+      _values: 0100000002000000
     - reorderableList:
         canAdd: 1
         canRemove: 1
@@ -85,9 +85,9 @@ MonoBehaviour:
         elementIcon: {fileID: 0}
       reqReferences: {fileID: 0}
       isExpanded: 1
-      _keyValues: 010000000200000003000000
-      _keys: 010000000200000003000000
-      _values: 0a000000140000001e000000
+      _keyValues: 0100000002000000
+      _keys: 0100000002000000
+      _values: 0a00000014000000
     - reorderableList:
         canAdd: 1
         canRemove: 1

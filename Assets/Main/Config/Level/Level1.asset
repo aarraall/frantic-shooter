@@ -16,8 +16,6 @@ MonoBehaviour:
   <LevelPrefab>k__BackingField: {fileID: 1164579286894536569, guid: d8243e7cc0134ba4e875a0f4cf1df9c4, type: 3}
   <UpgradeTriggerPercentages>k__BackingField:
   - 0.05
-  - 0.18
-  - 0.31
-  - 0.44
-  - 0.57
-  - 0.7
+  - 0.25
+  - 0.45
+  - 0.65
