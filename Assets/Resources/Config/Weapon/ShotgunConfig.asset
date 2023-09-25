@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1bb2d21034d399a4e9ce57547f0318ca, type: 3}
-  m_Name: RPGConfig
+  m_Name: ShotgunConfig
   m_EditorClassIdentifier: 
   <ConfigMap>k__BackingField:
     reorderableList:
@@ -60,9 +60,9 @@ MonoBehaviour:
         elementIcon: {fileID: 0}
       reqReferences: {fileID: 0}
       isExpanded: 1
-      _keyValues: 010000000200000003000000
-      _keys: 010000000200000003000000
-      _values: 010000000200000003000000
+      _keyValues: 01000000
+      _keys: 01000000
+      _values: 01000000
     - reorderableList:
         canAdd: 1
         canRemove: 1
@@ -85,9 +85,9 @@ MonoBehaviour:
         elementIcon: {fileID: 0}
       reqReferences: {fileID: 0}
       isExpanded: 1
-      _keyValues: 010000000200000003000000
-      _keys: 010000000200000003000000
-      _values: 320000006400000096000000
+      _keyValues: 01000000
+      _keys: 01000000
+      _values: 0a000000
     - reorderableList:
         canAdd: 1
         canRemove: 1
@@ -139,11 +139,11 @@ MonoBehaviour:
       _keys: 010000000200000003000000
       _values: 0000000002000000ffffffff
   <WeaponPositionDataProperty>k__BackingField:
-    <Position>k__BackingField: {x: -0.052, y: 0.136, z: 0.028}
-    <RotationEuler>k__BackingField: {x: 80.542046, y: 89.094574, z: 185.50797}
+    <Position>k__BackingField: {x: -0.079, y: 0.218, z: 0.091}
+    <RotationEuler>k__BackingField: {x: 81.56162, y: 77.88579, z: 169.2751}
   <WeaponHolderRigDataProperty>k__BackingField:
-    <LeftHandIKTargetPosition>k__BackingField: {x: -0.254, y: 1.239, z: 0.961}
-    <LeftHandIKTargetRotationEuler>k__BackingField: {x: -41.59, y: 156.923, z: -340.885}
+    <LeftHandIKTargetPosition>k__BackingField: {x: -0.734, y: 1.372, z: 1.16}
+    <LeftHandIKTargetRotationEuler>k__BackingField: {x: -72.938, y: 92.317, z: -269.08}
     <RightHandIKTargetPosition>k__BackingField: {x: -0.647, y: 1.002, z: 1.097}
     <RightHandIKTargetRotationEuler>k__BackingField: {x: 81.80298, y: 90.313194, z: 83.87144}
   <BulletPrefab>k__BackingField: {fileID: 9050773002423567077, guid: a9e63abe962cc454cb8126fcbd959198, type: 3}

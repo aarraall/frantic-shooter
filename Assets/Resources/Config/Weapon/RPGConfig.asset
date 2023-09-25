@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1bb2d21034d399a4e9ce57547f0318ca, type: 3}
-  m_Name: PistolConfig
+  m_Name: RPGConfig
   m_EditorClassIdentifier: 
   <ConfigMap>k__BackingField:
     reorderableList:
@@ -62,7 +62,57 @@ MonoBehaviour:
       isExpanded: 1
       _keyValues: 01000000
       _keys: 01000000
-      _values: 02000000
+      _values: 01000000
+    - reorderableList:
+        canAdd: 1
+        canRemove: 1
+        draggable: 1
+        expandable: 1
+        multipleSelection: 1
+        isExpanded: 1
+        label:
+          m_Text: Keys
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+        headerHeight: 18
+        footerHeight: 13
+        slideEasing: 0.15
+        verticalSpacing: 2
+        showDefaultBackground: 1
+        elementDisplayType: 0
+        elementNameProperty: 
+        elementNameOverride: 
+        elementIcon: {fileID: 0}
+      reqReferences: {fileID: 0}
+      isExpanded: 1
+      _keyValues: 010000000200000003000000
+      _keys: 010000000200000003000000
+      _values: 320000006400000096000000
+    - reorderableList:
+        canAdd: 1
+        canRemove: 1
+        draggable: 1
+        expandable: 1
+        multipleSelection: 1
+        isExpanded: 1
+        label:
+          m_Text: Keys
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+        headerHeight: 18
+        footerHeight: 13
+        slideEasing: 0.15
+        verticalSpacing: 2
+        showDefaultBackground: 1
+        elementDisplayType: 0
+        elementNameProperty: 
+        elementNameOverride: 
+        elementIcon: {fileID: 0}
+      reqReferences: {fileID: 0}
+      isExpanded: 1
+      _keyValues: 0100000002000000
+      _keys: 0100000002000000
+      _values: 0000000001000000
     - reorderableList:
         canAdd: 1
         canRemove: 1
@@ -87,63 +137,13 @@ MonoBehaviour:
       isExpanded: 1
       _keyValues: 01000000
       _keys: 01000000
-      _values: 05000000
-    - reorderableList:
-        canAdd: 1
-        canRemove: 1
-        draggable: 1
-        expandable: 1
-        multipleSelection: 1
-        isExpanded: 1
-        label:
-          m_Text: Keys
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        headerHeight: 18
-        footerHeight: 13
-        slideEasing: 0.15
-        verticalSpacing: 2
-        showDefaultBackground: 1
-        elementDisplayType: 0
-        elementNameProperty: 
-        elementNameOverride: 
-        elementIcon: {fileID: 0}
-      reqReferences: {fileID: 0}
-      isExpanded: 1
-      _keyValues: 010000000200000003000000
-      _keys: 010000000200000003000000
-      _values: 000000000100000002000000
-    - reorderableList:
-        canAdd: 1
-        canRemove: 1
-        draggable: 1
-        expandable: 1
-        multipleSelection: 1
-        isExpanded: 1
-        label:
-          m_Text: Keys
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        headerHeight: 18
-        footerHeight: 13
-        slideEasing: 0.15
-        verticalSpacing: 2
-        showDefaultBackground: 1
-        elementDisplayType: 0
-        elementNameProperty: 
-        elementNameOverride: 
-        elementIcon: {fileID: 0}
-      reqReferences: {fileID: 0}
-      isExpanded: 1
-      _keyValues: 010000000200000003000000
-      _keys: 010000000200000003000000
-      _values: 0000000002000000ffffffff
+      _values: 00000000
   <WeaponPositionDataProperty>k__BackingField:
-    <Position>k__BackingField: {x: -0.083, y: 0.137, z: 0.036}
-    <RotationEuler>k__BackingField: {x: 82.21593, y: 95.54619, z: 195.09181}
+    <Position>k__BackingField: {x: -0.052, y: 0.136, z: 0.028}
+    <RotationEuler>k__BackingField: {x: 80.542046, y: 89.094574, z: 185.50797}
   <WeaponHolderRigDataProperty>k__BackingField:
-    <LeftHandIKTargetPosition>k__BackingField: {x: -0.65602607, y: 0.74099994, z: 1.1339992}
-    <LeftHandIKTargetRotationEuler>k__BackingField: {x: 318.4103, y: 156.9226, z: 19.135061}
+    <LeftHandIKTargetPosition>k__BackingField: {x: -0.254, y: 1.239, z: 0.961}
+    <LeftHandIKTargetRotationEuler>k__BackingField: {x: -41.59, y: 156.923, z: -340.885}
     <RightHandIKTargetPosition>k__BackingField: {x: -0.647, y: 1.002, z: 1.097}
     <RightHandIKTargetRotationEuler>k__BackingField: {x: 81.80298, y: 90.313194, z: 83.87144}
   <BulletPrefab>k__BackingField: {fileID: 9050773002423567077, guid: a9e63abe962cc454cb8126fcbd959198, type: 3}
