@@ -41,6 +41,6 @@ public class PopupManager : MonoBehaviour
 
     private void Reset()
     {
-        popups = GetComponentsInChildren<PopupBase>().ToList();
+        popups = GetComponentsInChildren<PopupBase>(true).ToList();
     }
 }
