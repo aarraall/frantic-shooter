@@ -1,6 +1,9 @@
 using Cinemachine;
+using System;
 using System.Collections;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.Pool;
 
 public class Level : MonoBehaviour
 {
@@ -20,6 +23,8 @@ public class Level : MonoBehaviour
     float _distanceBetweenStartAndFinish;
     int _nextUpgradeCheckpointIndex = 0;
     State _state = State.None;
+
+    public PlayerController PlayerInstance => _playerInstance;
 
     public void Initialize(Joystick inputController, CinemachineVirtualCameraBase followCam)
     {
@@ -41,22 +46,47 @@ public class Level : MonoBehaviour
     {
         _playerInstance.SetState(PlayerController.State.Idle);
         _state = State.Paused;
+        PopupManager.Instance.OpenPopup(typeof(UpgradePopup));
     }
+    private void FinishLevel()
+    {
+        _playerInstance.SetState(PlayerController.State.Happy);
+        _state = State.Paused;
+        PopupManager.Instance.OpenPopup(typeof(WinPopup));
+    }
+
 
     private void Update()
     {
         if (_state != State.Playing) { return; }
         if (_playerInstance == null) { return; }
 
-        var playerFinishLineDistance = Vector3.Distance(_playerInstance.transform.position, finishPoint.position);
+        var playerFinishLineDistance = Vector3.Distance(_playerInstance.transform.position, playerSpawnPoint.position);
         var finishRate = playerFinishLineDistance / _distanceBetweenStartAndFinish;
 
-        if (!Mathf.Approximately(finishRate, UpgradeTriggerPercentages[_nextUpgradeCheckpointIndex]))
+        if (Approximately(finishRate, 1, .0025f))
+        {
+            //Level finished
+            FinishLevel();
+            return;
+        }
+        if (UpgradeTriggerPercentages.Length <= _nextUpgradeCheckpointIndex)
+        {
+            return;
+        }
+        if (!Approximately(finishRate, UpgradeTriggerPercentages[_nextUpgradeCheckpointIndex], .0025f))
         {
             return;
         }
 
+        _nextUpgradeCheckpointIndex++;
         PauseLevel();
     }
 
+   
+
+    private bool Approximately(float a, float b, float tolerance)
+    {
+        return (Mathf.Abs(a - b) < tolerance);
+    }
 }
