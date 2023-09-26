@@ -4,7 +4,6 @@ using UnityEngine.Pool;
 
 public class Bullet : MonoBehaviour
 {
-    [SerializeField] float initialLifeTime = 3.0f;
     public float TravelSpeed {  get; private set; }
     public int Damage {  get; private set; }
     public int BounceAmount {  get; private set; }
@@ -15,18 +14,20 @@ public class Bullet : MonoBehaviour
 
     private bool IsDead => _currentLifeTime <= 0;
     Vector3 _currentAttackDirection;
+    Weapon _weapon;
 
 
-    public void Initialize(float travelSpeed, int damage, int bounceAmount, IObjectPool<Bullet> pool)
+    public void Initialize(float travelSpeed, int damage, int bounceAmount, IObjectPool<Bullet> pool, Weapon weapon, Vector3 direction, float currentLifeTime)
     {
         TravelSpeed = travelSpeed;
         Damage = damage;
         BounceAmount = bounceAmount;
-        _currentLifeTime = initialLifeTime;
+        _currentLifeTime = currentLifeTime;
+        _currentAttackDirection = direction;
 
         gameObject.SetActive(true);
         _pool = pool;
-        _currentAttackDirection = transform.forward;
+        _weapon = weapon;
     }
 
     public void Fire()
@@ -34,7 +35,6 @@ public class Bullet : MonoBehaviour
         _currentLifeTime -= Time.deltaTime;
         if (IsDead)
         {
-            // return to pool
             ReturnToPool();
             return;
         }
@@ -64,6 +64,12 @@ public class Bullet : MonoBehaviour
 
     private void ReturnToPool()
     {
+        if (_pool == null || _weapon == null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         _pool.Release(this);
         _currentLifeTime = 0;
     }
