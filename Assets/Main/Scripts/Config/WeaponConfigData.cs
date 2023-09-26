@@ -15,10 +15,12 @@ public class WeaponConfigData : ScriptableObject
     /// -1 will represent unlimited in this map
     /// </summary>
     [field: SerializeField] public UpgradeLevelConfigMap ConfigMap { get; private set; }
-
     [field: SerializeField] public WeaponPositionData WeaponPositionDataProperty { get; private set; }
     [field: SerializeField] public WeaponHolderRigData WeaponHolderRigDataProperty { get; private set; }
     [field: SerializeField] public Bullet BulletPrefab { get; private set; }
+    [field: SerializeField] public float AttackFormationAngleY { get; private set; }
+    [field: SerializeField] public float BulletTravelSpeed{ get; private set; }
+    [field: SerializeField] public float BulletLifeTime{ get; private set; }
 
 }
 

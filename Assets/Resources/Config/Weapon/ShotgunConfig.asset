@@ -62,7 +62,7 @@ MonoBehaviour:
       isExpanded: 1
       _keyValues: 01000000
       _keys: 01000000
-      _values: 01000000
+      _values: 02000000
     - reorderableList:
         canAdd: 1
         canRemove: 1
@@ -85,9 +85,9 @@ MonoBehaviour:
         elementIcon: {fileID: 0}
       reqReferences: {fileID: 0}
       isExpanded: 1
-      _keyValues: 01000000
-      _keys: 01000000
-      _values: 0a000000
+      _keyValues: 0100000002000000
+      _keys: 0100000002000000
+      _values: 1400000028000000
     - reorderableList:
         canAdd: 1
         canRemove: 1
@@ -112,7 +112,7 @@ MonoBehaviour:
       isExpanded: 1
       _keyValues: 010000000200000003000000
       _keys: 010000000200000003000000
-      _values: 000000000100000002000000
+      _values: 010000000200000003000000
     - reorderableList:
         canAdd: 1
         canRemove: 1
@@ -147,3 +147,6 @@ MonoBehaviour:
     <RightHandIKTargetPosition>k__BackingField: {x: -0.647, y: 1.002, z: 1.097}
     <RightHandIKTargetRotationEuler>k__BackingField: {x: 81.80298, y: 90.313194, z: 83.87144}
   <BulletPrefab>k__BackingField: {fileID: 9050773002423567077, guid: a9e63abe962cc454cb8126fcbd959198, type: 3}
+  <AttackFormationAngleY>k__BackingField: 60
+  <BulletTravelSpeed>k__BackingField: 50
+  <BulletLifeTime>k__BackingField: 1.5
