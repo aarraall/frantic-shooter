@@ -1108,6 +1108,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7756067554103181770}
   m_LocalEulerAnglesHint: {x: -41.59, y: 156.923, z: -340.865}
+--- !u!1 &4354561462452048043
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8851979087755738751}
+  m_Layer: 0
+  m_Name: shootingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8851979087755738751
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4354561462452048043}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.25, z: 0.75}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7176667470172602204}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4370316835820074853
 GameObject:
   m_ObjectHideFlags: 0
@@ -1535,6 +1566,7 @@ Transform:
   m_Children:
   - {fileID: 8863754059598792529}
   - {fileID: 1465437442749376532}
+  - {fileID: 8851979087755738751}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3585306412693042151
@@ -1549,6 +1581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f517123d225871347ab84904114372ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shootingPoint: {fileID: 8851979087755738751}
   movementHandler: {fileID: 7343662863650220617}
   animator: {fileID: 8771676683530034022}
   rig: {fileID: 3807320102438173436}

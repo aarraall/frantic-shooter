@@ -1,11 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.Animations.Rigging;
-using UnityEngine.SocialPlatforms;
 
 public class PlayerController : MonoBehaviour
 {
@@ -19,6 +13,7 @@ public class PlayerController : MonoBehaviour
     }
 
     public State PlayerState { get; private set; }
+    [SerializeField] private Transform shootingPoint;
     [SerializeField] private MovementHandler movementHandler;
     [SerializeField] private Animator animator;
     [SerializeField] private Rig rig;
@@ -28,20 +23,21 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Weapon initialWeaponPrefab;
 
     Weapon _currentWeapon;
-    float _currentFireRate = 0f;
     float _fireCounter = 0;
+
+    public Weapon Weapon => _currentWeapon;
 
     public void Initialize(Joystick inputController)
     {
         SetState(State.Idle);
-        OnTakeWeapon(Instantiate(initialWeaponPrefab));
+        OnTakeWeapon(initialWeaponPrefab);
         movementHandler.Initialize(inputController);
         Subscribe();
     }
 
     public void OnDestroy()
     {
-        Unsubscribe(); 
+        Unsubscribe();
     }
 
     private void Subscribe()
@@ -70,14 +66,15 @@ public class PlayerController : MonoBehaviour
 
     public void OnTakeWeapon(Weapon weapon)
     {
-        _currentWeapon = weapon;
-        _currentWeapon.Initialize();
+        if (_currentWeapon != null)
+        {
+            Destroy(_currentWeapon.gameObject);
+        }
+
+        _currentWeapon = Instantiate(weapon);
+        _currentWeapon.Initialize(shootingPoint);
         SetIK();
         SetWeaponPosition();
-        _currentFireRate = 1f / _currentWeapon.
-            WeaponAttributesProperty.
-            UpgradeLevelMap[WeaponUpgradeType.FireRate].
-            UpgradeValue;
     }
 
     private void SetIK()
@@ -101,21 +98,26 @@ public class PlayerController : MonoBehaviour
     public void SetState(State state)
     {
         PlayerState = state;
-        animator.SetTrigger(GameConstants.PlayerAnimatorStateMap[PlayerState]);
         rig.weight = 0;
+        animator.SetBool(GameConstants.PlayerAnimatorStateMap[State.RunningAndShooting], false);
 
         switch (state)
         {
             case State.Idle:
+                animator.SetTrigger(GameConstants.PlayerAnimatorStateMap[PlayerState]);
                 break;
             case State.RunningAndShooting:
                 rig.weight = 1;
+                animator.SetBool(GameConstants.PlayerAnimatorStateMap[PlayerState], true);
                 break;
             case State.Happy:
+                animator.SetTrigger(GameConstants.PlayerAnimatorStateMap[PlayerState]);
                 break;
             case State.Sad:
+                animator.SetTrigger(GameConstants.PlayerAnimatorStateMap[PlayerState]);
                 break;
             case State.Dead:
+                animator.SetTrigger(GameConstants.PlayerAnimatorStateMap[PlayerState]);
                 break;
         }
     }
@@ -123,7 +125,7 @@ public class PlayerController : MonoBehaviour
     {
         _fireCounter += Time.deltaTime;
 
-        if (_fireCounter < _currentFireRate)
+        if (_fireCounter < Weapon.FireRate)
         {
             return;
         }
@@ -132,15 +134,16 @@ public class PlayerController : MonoBehaviour
         _fireCounter = 0;
     }
 
+
     private void Update()
     {
         if (PlayerState != State.RunningAndShooting) return;
         if (movementHandler == null) return;
         if (_currentWeapon == null) return;
-        if (_currentFireRate == 0) return;
+        if (Weapon.FireRate == 0) return;
 
         movementHandler.MoveAlongWithPath();
         Fire();
     }
-   
+
 }
