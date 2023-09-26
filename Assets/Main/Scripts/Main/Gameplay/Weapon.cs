@@ -1,4 +1,5 @@
 using RotaryHeart.Lib.SerializableDictionary;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -14,24 +15,30 @@ public class Weapon : MonoBehaviour
         public UpgradeLevelMap UpgradeLevelMap { get; set; }
 
         public float BulletTravelSpeed { get; set; }
+
+        public float AttackFormationAngleY { get; set; }
+        public float BulletLifeTime { get; set; }
     }
 
-    [SerializeField] Transform barrelTipTransform;
+    Transform _barrelTipTransform;
     [field: SerializeField] public WeaponConfigData WeaponConfigData { get; private set; }
 
     public WeaponAttributes WeaponAttributesProperty { get; private set; }
 
+    public float FireRate => 1f / (float)WeaponAttributesProperty.UpgradeLevelMap[WeaponUpgradeType.FireRate].UpgradeValue;
 
     IObjectPool<Bullet> _bulletPool;
 
     // Weapons with different behaviors can be derived from this script
-    public virtual void Initialize()
+    public virtual void Initialize(Transform shootingPoint)
     {
-        _bulletPool = new LinkedPool<Bullet>(CreateBullet, OnGetBullet, OnBulletReturnToPool, OnBulletDestroy, true, 20);
-
+        _bulletPool = new LinkedPool<Bullet>(CreateBullet, OnGetBullet, OnBulletReturnToPool, null, true, 20);
+        _barrelTipTransform = shootingPoint;
         WeaponAttributesProperty = new WeaponAttributes
         {
-            BulletTravelSpeed = 10f,
+            BulletTravelSpeed = WeaponConfigData.BulletTravelSpeed,
+            AttackFormationAngleY = WeaponConfigData.AttackFormationAngleY,
+            BulletLifeTime = WeaponConfigData.BulletLifeTime,
             UpgradeLevelMap = new UpgradeLevelMap
         {
             { WeaponUpgradeType.FireRate, new LevelUpgradeRateMap() {Level = 1, UpgradeValue =  WeaponConfigData.ConfigMap[WeaponUpgradeType.FireRate][1]} },
@@ -55,13 +62,7 @@ public class Weapon : MonoBehaviour
     void OnGetBullet(Bullet bullet)
     {
         bullet.transform.SetParent(null);
-        bullet.transform.position = barrelTipTransform.position;
-        bullet.transform.forward = barrelTipTransform.forward; // TODO : change this when implementing attack formations
-
-        bullet.Initialize(WeaponAttributesProperty.BulletTravelSpeed,
-            WeaponAttributesProperty.UpgradeLevelMap[WeaponUpgradeType.BulletDamage].UpgradeValue,
-            WeaponAttributesProperty.UpgradeLevelMap[WeaponUpgradeType.BouncingBullet].UpgradeValue,
-            _bulletPool);
+        bullet.transform.position = _barrelTipTransform.position;
     }
 
     void OnBulletReturnToPool(Bullet bullet)
@@ -70,26 +71,66 @@ public class Weapon : MonoBehaviour
         bullet.transform.SetParent(transform);
     }
 
-    void OnBulletDestroy(Bullet bullet)
-    {
-        Destroy(bullet);
-    }
     #endregion
 
     public virtual void Fire()
     {
-        // Take bullet from pool and send it through barrelTipTransform
-        var bullet = _bulletPool.Get();
-        bullet.Fire();
+        for (int i = 0; i < WeaponAttributesProperty.UpgradeLevelMap[WeaponUpgradeType.AttackFormation].UpgradeValue; i++)
+        {
+            var bullet = _bulletPool.Get();
+
+            var bulletDirection = _barrelTipTransform.forward;
+
+            if (i > 0)
+            {
+                var randomAngle = Random.Range(-WeaponAttributesProperty.AttackFormationAngleY, WeaponAttributesProperty.AttackFormationAngleY);
+                var eulerRandomAngle = Quaternion.Euler(0, randomAngle, 0);
+                bulletDirection = eulerRandomAngle * _barrelTipTransform.forward;
+            }
+
+            bullet.Initialize(WeaponAttributesProperty.BulletTravelSpeed,
+           WeaponAttributesProperty.UpgradeLevelMap[WeaponUpgradeType.BulletDamage].UpgradeValue,
+           WeaponAttributesProperty.UpgradeLevelMap[WeaponUpgradeType.BouncingBullet].UpgradeValue,
+           _bulletPool,
+           this, bulletDirection,
+           WeaponAttributesProperty.BulletLifeTime);
+        }
     }
 
     public void UpgradeLevel(WeaponUpgradeType type)
     {
-        var nextLevel = WeaponAttributesProperty.UpgradeLevelMap[type].Level++;
+        var nextLevel = ++WeaponAttributesProperty.UpgradeLevelMap[type].Level;
         var nextLevelValueForAttribute = WeaponConfigData.ConfigMap[type][nextLevel];
         WeaponAttributesProperty.UpgradeLevelMap[type].UpgradeValue = nextLevelValueForAttribute;
 
         //Inject behavior change to bullet if necessarry
+    }
+
+    private void OnDestroy()
+    {
+        _bulletPool?.Clear();
+        _bulletPool = null;
+    }
+
+    public List<WeaponUpgradeType> ReturnThreeUpgrades()
+    {
+        var availableUpgradeList = new List<WeaponUpgradeType>();
+        foreach (var configKvP in WeaponConfigData.ConfigMap)
+        {
+            var currentSkillLevel = WeaponAttributesProperty.UpgradeLevelMap[configKvP.Key].Level;
+            var upgradeableCount = configKvP.Value.Count - currentSkillLevel;
+
+            for (int i = 0; i < upgradeableCount; i++)
+            {
+                availableUpgradeList.Add(configKvP.Key);
+            }
+        }
+
+        var rnd = new System.Random();
+        var randomized = availableUpgradeList.OrderBy(item => rnd.Next());
+        var threeUpgrades = availableUpgradeList.Take(3).ToList();
+
+        return threeUpgrades;
     }
 }
 
@@ -100,8 +141,8 @@ public class UpgradeLevelMap : SerializableDictionaryBase<WeaponUpgradeType, Lev
 [System.Serializable]
 public class LevelUpgradeRateMap
 {
-    [field: SerializeField] public int Level { get;  set; }
-    [field: SerializeField] public int UpgradeValue { get;  set; }
+    [field: SerializeField] public int Level { get; set; }
+    [field: SerializeField] public int UpgradeValue { get; set; }
 }
 
 public enum WeaponUpgradeType
