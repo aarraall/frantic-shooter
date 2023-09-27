@@ -7,6 +7,8 @@ public class Obstacle : MonoBehaviour
 
     [field: SerializeField] public int Health {  get; set; }
 
+    [field: SerializeField] public Collider Collider { get; private set; }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other == null) return;
@@ -16,6 +18,7 @@ public class Obstacle : MonoBehaviour
             var bullet = other.attachedRigidbody.GetComponent<Bullet>();
             var bulletDamage = bullet.Damage;
             TakeDamage(bulletDamage);
+            bullet.ObjectBounce(Collider.ClosestPointOnBounds(bullet.transform.position));
             return;
         }
 
