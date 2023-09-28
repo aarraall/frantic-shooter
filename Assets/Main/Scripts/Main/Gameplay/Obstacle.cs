@@ -4,17 +4,44 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-    [field: SerializeField] public MeshRenderer Renderer { get; private set; }
+    public enum Difficulty
+    {
+        Easy,
+        Medium,
+        Hard
+    }
 
-    public int Health {  get; set; }
+    [field: SerializeField] public Difficulty DifficultyLevel { get; private set; }
+
+    [field: SerializeField] public MeshRenderer Renderer { get; private set; }
 
     [field: SerializeField] public Collider Collider { get; private set; }
 
     [field: SerializeField] public TMP_Text HPText{ get; private set; }
 
+    public int Health { get; set; }
+
     private void Awake()
     {
-        Health = Random.Range(20, 50);
+        var startingRange = 15;
+        var easyRange = 20;
+        var mediumRange = 40;
+        var hardRange = 60;
+
+        switch (DifficultyLevel)
+        {
+            case Difficulty.Easy:
+                Health = Random.Range(startingRange, easyRange);
+                break;
+            case Difficulty.Medium:
+                Health = Random.Range(easyRange, mediumRange);
+                break;
+            case Difficulty.Hard:
+                Health = Random.Range(mediumRange, hardRange);
+                break;
+        }
+
+
         HPText.text = Health.ToString();
     }
 
