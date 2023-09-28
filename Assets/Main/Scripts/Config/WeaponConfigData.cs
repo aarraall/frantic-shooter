@@ -19,6 +19,7 @@ public class WeaponConfigData : ScriptableObject
     [field: SerializeField] public WeaponHolderRigData WeaponHolderRigDataProperty { get; private set; }
     [field: SerializeField] public Bullet BulletPrefab { get; private set; }
     [field: SerializeField] public float AttackFormationAngleY { get; private set; }
+    [field: SerializeField] public float AttackFormationAngleY2 { get; private set; }
     [field: SerializeField] public float BulletTravelSpeed{ get; private set; }
     [field: SerializeField] public float BulletLifeTime{ get; private set; }
 
