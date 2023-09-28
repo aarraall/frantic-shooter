@@ -10,6 +10,7 @@ public class PopupManager : MonoBehaviour
     {
         HideAll();
         PopupBase popup = Instantiate(Resources.Load<PopupBase>(model.PrefabName));
+        _activePopups.Add(popup);
         popup.transform.SetParent(transform);
         popup.Initialize(model);
         popup.Show();
@@ -19,7 +20,9 @@ public class PopupManager : MonoBehaviour
     {
         var popup = _activePopups.FirstOrDefault(popup => popup.GetType() == popupType);
         popup.Hide();
-        Destroy(popup);
+        _activePopups.Remove(popup);
+        Destroy(popup.gameObject);
+
     }
 
     public void HideAll()
@@ -27,6 +30,9 @@ public class PopupManager : MonoBehaviour
         foreach (var popup in _activePopups)
         {
             popup.Hide();
+            Destroy(popup.gameObject);
         }
+
+        _activePopups.Clear();
     }
 }
