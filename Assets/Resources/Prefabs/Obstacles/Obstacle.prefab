@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 18abbc90766e86948afd35f476423e47, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -119,8 +119,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bb0710af2cb4754195b09edf43c28ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <DifficultyLevel>k__BackingField: 0
   <Renderer>k__BackingField: {fileID: 7214052612415374649}
-  <Health>k__BackingField: 30
   <Collider>k__BackingField: {fileID: 4099183364114434724}
   <HPText>k__BackingField: {fileID: 1225603687783632802}
 --- !u!1 &7202849991351544271

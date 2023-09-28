@@ -668,6 +668,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2842940110576064207}
+  - {fileID: 2446738655854467378}
   - {fileID: 1837879689959098931}
   - {fileID: 4862081373333269278}
   - {fileID: 1608707512075512406}
@@ -2110,6 +2111,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2170,6 +2175,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2234,6 +2243,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2295,6 +2308,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2358,6 +2375,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2420,6 +2441,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2480,6 +2505,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2544,6 +2573,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2604,6 +2637,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2668,6 +2705,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2729,6 +2770,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2792,6 +2837,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2853,6 +2902,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2916,6 +2969,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2977,6 +3034,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3040,6 +3101,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3101,6 +3166,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3164,6 +3233,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3225,6 +3298,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3288,6 +3365,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3349,6 +3430,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3412,6 +3497,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3473,6 +3562,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3536,6 +3629,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3596,6 +3693,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3660,6 +3761,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3721,6 +3826,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3784,6 +3893,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3845,6 +3958,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3908,6 +4025,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3968,6 +4089,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4032,6 +4157,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4093,6 +4222,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4156,6 +4289,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4218,6 +4355,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4278,6 +4419,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4342,6 +4487,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4404,6 +4553,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4464,6 +4617,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4528,6 +4685,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4588,6 +4749,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4652,6 +4817,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4713,6 +4882,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4776,6 +4949,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4836,6 +5013,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4900,6 +5081,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4961,6 +5146,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5024,6 +5213,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5085,6 +5278,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5148,6 +5345,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5209,6 +5410,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5272,6 +5477,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5332,6 +5541,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -5396,6 +5609,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5456,6 +5673,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -5520,6 +5741,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5581,6 +5806,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5644,6 +5873,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5706,6 +5939,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5766,6 +6003,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -5830,6 +6071,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5891,6 +6136,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5954,6 +6203,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6015,6 +6268,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6078,6 +6335,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6139,6 +6400,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6202,6 +6467,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6264,6 +6533,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6324,6 +6597,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6388,6 +6665,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6450,6 +6731,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6510,6 +6795,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6574,6 +6863,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6635,6 +6928,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6698,6 +6995,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6758,6 +7059,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6822,6 +7127,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6831,6 +7140,76 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
   m_PrefabInstance: {fileID: 3775620027379070973}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3826014990015533075
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4917055682001187593}
+    m_Modifications:
+    - target: {fileID: 1507636620937791777, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507636620937791777, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507636620937791777, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507636620937791777, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507636620937791777, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507636620937791777, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507636620937791777, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507636620937791777, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507636620937791777, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507636620937791777, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507636620937791777, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507636620937791777, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507636620937791836, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
+      propertyPath: m_Name
+      value: WaterBlock_50m
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
+--- !u!4 &2446738655854467378 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1507636620937791777, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
+  m_PrefabInstance: {fileID: 3826014990015533075}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3870238535932429023
 PrefabInstance:
@@ -6883,6 +7262,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6944,6 +7327,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7008,6 +7395,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7068,6 +7459,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7132,6 +7527,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7193,6 +7592,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7256,6 +7659,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7317,6 +7724,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7380,6 +7791,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7441,6 +7856,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7504,6 +7923,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7565,6 +7988,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7628,6 +8055,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7689,6 +8120,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7752,6 +8187,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7813,6 +8252,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7876,6 +8319,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7938,6 +8385,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7998,6 +8449,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -8062,6 +8517,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8122,6 +8581,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -8186,6 +8649,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8247,6 +8714,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8310,6 +8781,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8371,6 +8846,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8434,6 +8913,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8494,6 +8977,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -8558,6 +9045,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8620,6 +9111,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8680,6 +9175,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -8744,6 +9243,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8806,6 +9309,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8866,6 +9373,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -8930,6 +9441,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8991,6 +9506,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9054,6 +9573,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9114,6 +9637,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -9178,6 +9705,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9238,6 +9769,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -9302,6 +9837,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9362,6 +9901,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -9426,6 +9969,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9487,6 +10034,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9550,6 +10101,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9612,6 +10167,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9672,6 +10231,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -9886,6 +10449,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9948,6 +10515,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10008,6 +10579,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -10072,6 +10647,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10133,6 +10712,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10196,6 +10779,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10257,6 +10844,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10320,6 +10911,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10381,6 +10976,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10444,6 +11043,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10505,6 +11108,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10568,6 +11175,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10629,6 +11240,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10692,6 +11307,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10754,6 +11373,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10814,6 +11437,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -10878,6 +11505,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10938,6 +11569,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -11002,6 +11637,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11063,6 +11702,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11126,6 +11769,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11186,6 +11833,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -11250,6 +11901,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11311,6 +11966,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11374,6 +12033,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11436,6 +12099,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11496,6 +12163,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -11560,6 +12231,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11620,6 +12295,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -11684,6 +12363,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11744,6 +12427,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -11808,6 +12495,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11868,6 +12559,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -11932,6 +12627,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11992,6 +12691,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -12056,6 +12759,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12117,6 +12824,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12180,6 +12891,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12241,6 +12956,10 @@ PrefabInstance:
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12304,6 +13023,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12366,6 +13089,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12426,6 +13153,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -12490,6 +13221,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12550,6 +13285,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -12764,6 +13503,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12826,6 +13569,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12886,6 +13633,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462173545568561195, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944400170254435058, guid: 1ef63a024cc57f54c8495c47bf530981, type: 3}
+      propertyPath: <DifficultyLevel>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
