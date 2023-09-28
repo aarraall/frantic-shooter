@@ -29,10 +29,13 @@ public class Weapon : MonoBehaviour
     public float FireRate => 1f / (float)WeaponAttributesProperty.UpgradeLevelMap[WeaponUpgradeType.FireRate].UpgradeValue;
 
     IObjectPool<Bullet> _bulletPool;
+    Transform _levelParent;
+
 
     // Weapons with different behaviors can be derived from this script
-    public virtual void Initialize(Transform shootingPoint)
+    public virtual void Initialize(Transform shootingPoint, Transform levelParent)
     {
+        _levelParent = levelParent;
         _bulletPool = new LinkedPool<Bullet>(CreateBullet, OnGetBullet, OnBulletReturnToPool, null, true, 20);
         _barrelTipTransform = shootingPoint;
         WeaponAttributesProperty = new WeaponAttributes
@@ -54,7 +57,7 @@ public class Weapon : MonoBehaviour
     Bullet CreateBullet()
     {
         var bullet = Instantiate(WeaponConfigData.BulletPrefab);
-        bullet.transform.SetParent(transform);
+        bullet.transform.SetParent(_levelParent);
         bullet.gameObject.SetActive(false);
 
         return bullet;
@@ -62,14 +65,12 @@ public class Weapon : MonoBehaviour
 
     void OnGetBullet(Bullet bullet)
     {
-        bullet.transform.SetParent(null);
         bullet.transform.position = _barrelTipTransform.position;
     }
 
     void OnBulletReturnToPool(Bullet bullet)
     {
         bullet.gameObject.SetActive(false);
-        bullet.transform.SetParent(transform);
     }
 
     #endregion
