@@ -447,7 +447,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1396118556666616126}
   - component: {fileID: 8147686167961135428}
-  - component: {fileID: 4910006288673052696}
+  - component: {fileID: 4812953921690491526}
   m_Layer: 6
   m_Name: gate
   m_TagString: Untagged
@@ -487,7 +487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponTransform: {fileID: 6419831643456248317}
   weapon: {fileID: 0}
---- !u!54 &4910006288673052696
+--- !u!54 &4812953921690491526
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -507,13 +507,13 @@ Rigidbody:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
+  m_ImplicitCom: 0
+  m_ImplicitTensor: 0
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 126
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!1 &8075837984494978506
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,12 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46400b7a7057c3440812ff0bab9548a7, type: 3}
   m_Name: Level2
   m_EditorClassIdentifier: 
-  <LevelID>k__BackingField: 1
-  <LevelPrefab>k__BackingField: {fileID: 0}
-  <UpgradeTriggerPercentages>k__BackingField:
-  - 0.05
-  - 0.18
-  - 0.31
-  - 0.44
-  - 0.57
-  - 0.7
+  <LevelID>k__BackingField: 2
+  <LevelPrefab>k__BackingField: {fileID: 1164579286894536569, guid: 2233fd4113ca8ed4092a5b3324334572, type: 3}

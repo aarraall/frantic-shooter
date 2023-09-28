@@ -648,7 +648,7 @@ GameObject:
   - component: {fileID: 1164579286894536569}
   - component: {fileID: 4502434536036708329}
   m_Layer: 0
-  m_Name: debug-level
+  m_Name: debug-level 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

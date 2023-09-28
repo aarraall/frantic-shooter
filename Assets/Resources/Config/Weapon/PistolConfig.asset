@@ -60,59 +60,9 @@ MonoBehaviour:
         elementIcon: {fileID: 0}
       reqReferences: {fileID: 0}
       isExpanded: 1
-      _keyValues: 01000000
-      _keys: 01000000
-      _values: 02000000
-    - reorderableList:
-        canAdd: 1
-        canRemove: 1
-        draggable: 1
-        expandable: 1
-        multipleSelection: 1
-        isExpanded: 1
-        label:
-          m_Text: Keys
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        headerHeight: 18
-        footerHeight: 13
-        slideEasing: 0.15
-        verticalSpacing: 2
-        showDefaultBackground: 1
-        elementDisplayType: 0
-        elementNameProperty: 
-        elementNameOverride: 
-        elementIcon: {fileID: 0}
-      reqReferences: {fileID: 0}
-      isExpanded: 1
-      _keyValues: 01000000
-      _keys: 01000000
-      _values: 05000000
-    - reorderableList:
-        canAdd: 1
-        canRemove: 1
-        draggable: 1
-        expandable: 1
-        multipleSelection: 1
-        isExpanded: 1
-        label:
-          m_Text: Keys
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        headerHeight: 18
-        footerHeight: 13
-        slideEasing: 0.15
-        verticalSpacing: 2
-        showDefaultBackground: 1
-        elementDisplayType: 0
-        elementNameProperty: 
-        elementNameOverride: 
-        elementIcon: {fileID: 0}
-      reqReferences: {fileID: 0}
-      isExpanded: 1
       _keyValues: 010000000200000003000000
       _keys: 010000000200000003000000
-      _values: 010000000200000003000000
+      _values: 020000000400000006000000
     - reorderableList:
         canAdd: 1
         canRemove: 1
@@ -135,9 +85,59 @@ MonoBehaviour:
         elementIcon: {fileID: 0}
       reqReferences: {fileID: 0}
       isExpanded: 1
-      _keyValues: 010000000200000003000000
-      _keys: 010000000200000003000000
-      _values: ffffffffffffffffffffffff
+      _keyValues: 01000000
+      _keys: 01000000
+      _values: 07000000
+    - reorderableList:
+        canAdd: 1
+        canRemove: 1
+        draggable: 1
+        expandable: 1
+        multipleSelection: 1
+        isExpanded: 1
+        label:
+          m_Text: Keys
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+        headerHeight: 18
+        footerHeight: 13
+        slideEasing: 0.15
+        verticalSpacing: 2
+        showDefaultBackground: 1
+        elementDisplayType: 0
+        elementNameProperty: 
+        elementNameOverride: 
+        elementIcon: {fileID: 0}
+      reqReferences: {fileID: 0}
+      isExpanded: 1
+      _keyValues: 0100000002000000
+      _keys: 0100000002000000
+      _values: 0100000002000000
+    - reorderableList:
+        canAdd: 1
+        canRemove: 1
+        draggable: 1
+        expandable: 1
+        multipleSelection: 1
+        isExpanded: 1
+        label:
+          m_Text: Keys
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+        headerHeight: 18
+        footerHeight: 13
+        slideEasing: 0.15
+        verticalSpacing: 2
+        showDefaultBackground: 1
+        elementDisplayType: 0
+        elementNameProperty: 
+        elementNameOverride: 
+        elementIcon: {fileID: 0}
+      reqReferences: {fileID: 0}
+      isExpanded: 1
+      _keyValues: 01000000
+      _keys: 01000000
+      _values: 00000000
   <WeaponPositionDataProperty>k__BackingField:
     <Position>k__BackingField: {x: -0.083, y: 0.137, z: 0.036}
     <RotationEuler>k__BackingField: {x: 82.21593, y: 95.54619, z: 195.09181}
@@ -147,6 +147,7 @@ MonoBehaviour:
     <RightHandIKTargetPosition>k__BackingField: {x: -0.647, y: 1.002, z: 1.097}
     <RightHandIKTargetRotationEuler>k__BackingField: {x: 81.80298, y: 90.313194, z: 83.87144}
   <BulletPrefab>k__BackingField: {fileID: 9050773002423567077, guid: a9e63abe962cc454cb8126fcbd959198, type: 3}
-  <AttackFormationAngleY>k__BackingField: 30
-  <BulletTravelSpeed>k__BackingField: 15
-  <BulletLifeTime>k__BackingField: 5
+  <AttackFormationAngleY>k__BackingField: 20
+  <AttackFormationAngleY2>k__BackingField: -20
+  <BulletTravelSpeed>k__BackingField: 20
+  <BulletLifeTime>k__BackingField: 1

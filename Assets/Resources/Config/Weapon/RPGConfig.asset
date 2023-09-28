@@ -60,84 +60,84 @@ MonoBehaviour:
         elementIcon: {fileID: 0}
       reqReferences: {fileID: 0}
       isExpanded: 1
+      _keyValues: 0100000002000000
+      _keys: 0100000002000000
+      _values: 0100000002000000
+    - reorderableList:
+        canAdd: 1
+        canRemove: 1
+        draggable: 1
+        expandable: 1
+        multipleSelection: 1
+        isExpanded: 1
+        label:
+          m_Text: Keys
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+        headerHeight: 18
+        footerHeight: 13
+        slideEasing: 0.15
+        verticalSpacing: 2
+        showDefaultBackground: 1
+        elementDisplayType: 0
+        elementNameProperty: 
+        elementNameOverride: 
+        elementIcon: {fileID: 0}
+      reqReferences: {fileID: 0}
+      isExpanded: 1
+      _keyValues: 0100000002000000
+      _keys: 0100000002000000
+      _values: 3200000064000000
+    - reorderableList:
+        canAdd: 1
+        canRemove: 1
+        draggable: 1
+        expandable: 1
+        multipleSelection: 1
+        isExpanded: 1
+        label:
+          m_Text: Keys
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+        headerHeight: 18
+        footerHeight: 13
+        slideEasing: 0.15
+        verticalSpacing: 2
+        showDefaultBackground: 1
+        elementDisplayType: 0
+        elementNameProperty: 
+        elementNameOverride: 
+        elementIcon: {fileID: 0}
+      reqReferences: {fileID: 0}
+      isExpanded: 1
+      _keyValues: 0100000002000000
+      _keys: 0100000002000000
+      _values: 0100000002000000
+    - reorderableList:
+        canAdd: 1
+        canRemove: 1
+        draggable: 1
+        expandable: 1
+        multipleSelection: 1
+        isExpanded: 1
+        label:
+          m_Text: Keys
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+        headerHeight: 18
+        footerHeight: 13
+        slideEasing: 0.15
+        verticalSpacing: 2
+        showDefaultBackground: 1
+        elementDisplayType: 0
+        elementNameProperty: 
+        elementNameOverride: 
+        elementIcon: {fileID: 0}
+      reqReferences: {fileID: 0}
+      isExpanded: 1
       _keyValues: 01000000
       _keys: 01000000
-      _values: 01000000
-    - reorderableList:
-        canAdd: 1
-        canRemove: 1
-        draggable: 1
-        expandable: 1
-        multipleSelection: 1
-        isExpanded: 1
-        label:
-          m_Text: Keys
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        headerHeight: 18
-        footerHeight: 13
-        slideEasing: 0.15
-        verticalSpacing: 2
-        showDefaultBackground: 1
-        elementDisplayType: 0
-        elementNameProperty: 
-        elementNameOverride: 
-        elementIcon: {fileID: 0}
-      reqReferences: {fileID: 0}
-      isExpanded: 1
-      _keyValues: 010000000200000003000000
-      _keys: 010000000200000003000000
-      _values: 320000006400000096000000
-    - reorderableList:
-        canAdd: 1
-        canRemove: 1
-        draggable: 1
-        expandable: 1
-        multipleSelection: 1
-        isExpanded: 1
-        label:
-          m_Text: Keys
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        headerHeight: 18
-        footerHeight: 13
-        slideEasing: 0.15
-        verticalSpacing: 2
-        showDefaultBackground: 1
-        elementDisplayType: 0
-        elementNameProperty: 
-        elementNameOverride: 
-        elementIcon: {fileID: 0}
-      reqReferences: {fileID: 0}
-      isExpanded: 1
-      _keyValues: 01000000
-      _keys: 01000000
-      _values: 01000000
-    - reorderableList:
-        canAdd: 1
-        canRemove: 1
-        draggable: 1
-        expandable: 1
-        multipleSelection: 1
-        isExpanded: 1
-        label:
-          m_Text: Keys
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        headerHeight: 18
-        footerHeight: 13
-        slideEasing: 0.15
-        verticalSpacing: 2
-        showDefaultBackground: 1
-        elementDisplayType: 0
-        elementNameProperty: 
-        elementNameOverride: 
-        elementIcon: {fileID: 0}
-      reqReferences: {fileID: 0}
-      isExpanded: 1
-      _keyValues: 010000000200000003000000
-      _keys: 010000000200000003000000
-      _values: 0000000002000000ffffffff
+      _values: 00000000
   <WeaponPositionDataProperty>k__BackingField:
     <Position>k__BackingField: {x: -0.052, y: 0.136, z: 0.028}
     <RotationEuler>k__BackingField: {x: 80.542046, y: 89.094574, z: 185.50797}
@@ -148,5 +148,6 @@ MonoBehaviour:
     <RightHandIKTargetRotationEuler>k__BackingField: {x: 81.80298, y: 90.313194, z: 83.87144}
   <BulletPrefab>k__BackingField: {fileID: 9050773002423567077, guid: a9e63abe962cc454cb8126fcbd959198, type: 3}
   <AttackFormationAngleY>k__BackingField: 10
-  <BulletTravelSpeed>k__BackingField: 10
-  <BulletLifeTime>k__BackingField: 2.5
+  <AttackFormationAngleY2>k__BackingField: -10
+  <BulletTravelSpeed>k__BackingField: 15
+  <BulletLifeTime>k__BackingField: 1.5
