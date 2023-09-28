@@ -1,7 +1,8 @@
+using System;
 using UnityEngine;
 using Zenject;
 
-public class FrustumService : MonoBehaviour
+public class FrustumService : ITickable, IDisposable
 {
     [Inject] Camera _camera;
     Plane[] _cameraFrustum;
@@ -55,10 +56,15 @@ public class FrustumService : MonoBehaviour
 
     }
 
-
-    private void Update()
+    public void Tick()
     {
         if (_camera == null) return;
         _cameraFrustum = GeometryUtility.CalculateFrustumPlanes(_camera);
+    }
+
+    public void Dispose()
+    {
+        _camera = null;
+        _cameraFrustum = null;
     }
 }

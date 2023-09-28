@@ -33,6 +33,9 @@ public class Obstacle : MonoBehaviour
         Renderer.material.DOKill(true);
         transform.DOKill(true);
 
+        if (Renderer == null || transform == null)
+            return;
+
         Renderer.material
             .DOColor(Color.red, .2f)
             .SetLoops(2, LoopType.Yoyo)

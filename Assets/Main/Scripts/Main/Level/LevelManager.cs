@@ -1,7 +1,9 @@
+using System;
 using UnityEngine;
 using Zenject;
+using Object = UnityEngine.Object;
 
-public class LevelManager : MonoBehaviour
+public class LevelManager : IInitializable, IDisposable
 {
     PopupManager _popupManager;
     Level _activeLevel;
@@ -20,9 +22,14 @@ public class LevelManager : MonoBehaviour
         Subscribe();
     }
 
-    private void Start()
+    public void Initialize()
     {
         LoadLevel();
+    }
+
+    public void Dispose()
+    {
+        OnDestroy();
     }
 
     private void OnDestroy()
@@ -59,7 +66,7 @@ public class LevelManager : MonoBehaviour
     {
         if (_activeLevel == null) return;
 
-        Destroy(_activeLevel.gameObject);
+        Object.Destroy(_activeLevel.gameObject);
         _activeLevel = null;
     }
 
@@ -75,7 +82,7 @@ public class LevelManager : MonoBehaviour
 
         var levelToLoad = _levelDB.LevelConfigMap[_initialLevel];
         var levelPref = levelToLoad.LevelPrefab;
-        _activeLevel = Instantiate(levelPref);
+        _activeLevel = Object.Instantiate(levelPref);
         _popupManager.OpenPopup(new PopupBase.ModelBase(PrefabDB.k_ui_tapToPlay_prefab));
     }
 
@@ -97,4 +104,5 @@ public class LevelManager : MonoBehaviour
     {
         LoadLevel();
     }
+
 }

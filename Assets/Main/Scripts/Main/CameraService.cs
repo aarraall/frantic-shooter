@@ -6,12 +6,11 @@ using Zenject;
 /// We can add more functionality here like animated camera, zoom in target, zoom out target etc.
 /// </summary>
 /// <param name="target"></param>
-public class CameraService : MonoBehaviour
+public class CameraService : IInitializable
 {
     CinemachineVirtualCameraBase _followCam;
-    [Inject] Camera _mainCamera;
 
-    private void Awake()
+    public void Initialize()
     {
         CreateFollowCamera();
     }
@@ -23,7 +22,7 @@ public class CameraService : MonoBehaviour
             return;
         }
 
-        _followCam = Instantiate(Resources.Load<CinemachineVirtualCameraBase>(PrefabDB.k_follow_cam_prefab), transform);
+        _followCam = Object.Instantiate(Resources.Load<CinemachineVirtualCameraBase>(PrefabDB.k_follow_cam_prefab));
     }
 
 
@@ -36,4 +35,6 @@ public class CameraService : MonoBehaviour
     {
         _followCam.LookAt = target;
     }
+
+   
 }
