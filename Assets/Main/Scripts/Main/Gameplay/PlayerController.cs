@@ -22,7 +22,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private TwoBoneIKConstraint leftHandIK, rightHandIk;
 
     Weapon _currentWeapon;
-    float _fireCounter = 0;
     Transform _levelParent;
 
     public Weapon Weapon => _currentWeapon;
@@ -123,18 +122,6 @@ public class PlayerController : MonoBehaviour
                 break;
         }
     }
-    private void Fire()
-    {
-        _fireCounter += Time.deltaTime;
-
-        if (_fireCounter < Weapon.FireRate)
-        {
-            return;
-        }
-
-        _currentWeapon.Fire();
-        _fireCounter = 0;
-    }
 
 
     private void Update()
@@ -142,10 +129,9 @@ public class PlayerController : MonoBehaviour
         if (PlayerState != State.RunningAndShooting) return;
         if (movementHandler == null) return;
         if (_currentWeapon == null) return;
-        if (Weapon.FireRate == 0) return;
 
         movementHandler.MoveAlongWithPath();
-        Fire();
+        Weapon.Fire();
     }
 
 }

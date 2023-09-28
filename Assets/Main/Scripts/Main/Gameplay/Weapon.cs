@@ -18,10 +18,13 @@ public class Weapon : MonoBehaviour
         public float BulletTravelSpeed { get; set; }
 
         public float AttackFormationAngleY { get; set; }
+        public float AttackFormationAngleY2 { get; set; }
         public float BulletLifeTime { get; set; }
     }
 
     Transform _barrelTipTransform;
+    float _fireCounter = 0;
+
     [field: SerializeField] public WeaponConfigData WeaponConfigData { get; private set; }
 
     public WeaponAttributes WeaponAttributesProperty { get; private set; }
@@ -42,6 +45,7 @@ public class Weapon : MonoBehaviour
         {
             BulletTravelSpeed = WeaponConfigData.BulletTravelSpeed,
             AttackFormationAngleY = WeaponConfigData.AttackFormationAngleY,
+            AttackFormationAngleY2 = WeaponConfigData.AttackFormationAngleY2,
             BulletLifeTime = WeaponConfigData.BulletLifeTime,
             UpgradeLevelMap = new UpgradeLevelMap
         {
@@ -77,6 +81,13 @@ public class Weapon : MonoBehaviour
 
     public virtual void Fire()
     {
+        _fireCounter += Time.deltaTime;
+
+        if (_fireCounter < FireRate)
+        {
+            return;
+        }
+
         for (int i = 0; i < WeaponAttributesProperty.UpgradeLevelMap[WeaponUpgradeType.AttackFormation].UpgradeValue; i++)
         {
             var bullet = _bulletPool.Get();
@@ -85,10 +96,23 @@ public class Weapon : MonoBehaviour
 
             if (i > 0)
             {
-                var randomAngle = Random.Range(-WeaponAttributesProperty.AttackFormationAngleY, WeaponAttributesProperty.AttackFormationAngleY);
-                var eulerRandomAngle = Quaternion.Euler(0, randomAngle, 0);
-                bulletDirection = eulerRandomAngle * _barrelTipTransform.forward;
+                Quaternion eulerAngle;
+
+                if (i % 2 == 0)
+                {
+                    //First version was randomized and it was beautiful, then I realized that GDD asks me for an angle that we have more control on
+                    //var randomAngle = Random.Range(-WeaponAttributesProperty.AttackFormationAngleY, WeaponAttributesProperty.AttackFormationAngleY);
+                    //var eulerRandomAngle = Quaternion.Euler(0, randomAngle, 0);
+                    eulerAngle = Quaternion.Euler(0, WeaponAttributesProperty.AttackFormationAngleY, 0);
+                }
+                else
+                {
+                    eulerAngle = Quaternion.Euler(0, WeaponAttributesProperty.AttackFormationAngleY2, 0);
+                }
+
+                bulletDirection = eulerAngle * _barrelTipTransform.forward;
             }
+
 
             bullet.Initialize(WeaponAttributesProperty.BulletTravelSpeed,
            WeaponAttributesProperty.UpgradeLevelMap[WeaponUpgradeType.BulletDamage].UpgradeValue,
@@ -97,6 +121,8 @@ public class Weapon : MonoBehaviour
            this, bulletDirection,
            WeaponAttributesProperty.BulletLifeTime);
         }
+
+        _fireCounter = 0;
     }
 
     public void UpgradeLevel(WeaponUpgradeType type)
