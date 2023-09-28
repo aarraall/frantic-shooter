@@ -120,3 +120,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Renderer>k__BackingField: {fileID: 7214052612415374649}
   <Health>k__BackingField: 30
+  <Collider>k__BackingField: {fileID: 4099183364114434724}

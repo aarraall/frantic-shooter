@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8881216048426155863}
   - component: {fileID: 9182163756780034001}
   - component: {fileID: 6357110981604812886}
-  - component: {fileID: 3710485362289621734}
+  - component: {fileID: 956147513385669971}
   m_Layer: 7
   m_Name: debug-visual
   m_TagString: Bullet
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &3710485362289621734
+--- !u!135 &956147513385669971
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,7 +165,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 126
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!114 &9050773002423567077
 MonoBehaviour:
   m_ObjectHideFlags: 0
