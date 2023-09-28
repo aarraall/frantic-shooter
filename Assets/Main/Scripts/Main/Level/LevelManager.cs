@@ -67,6 +67,12 @@ public class LevelManager : MonoBehaviour
     {
         Unload();
 
+        //with this was we can load levels endlessly
+        if (_levelDB.LevelConfigMap.Count >= _initialLevel)
+        {
+            _initialLevel = 1;
+        }
+
         var levelToLoad = _levelDB.LevelConfigMap[_initialLevel];
         var levelPref = levelToLoad.LevelPrefab;
         _activeLevel = Instantiate(levelPref);
