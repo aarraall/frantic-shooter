@@ -30,6 +30,9 @@ public class Obstacle : MonoBehaviour
     private void TakeDamage(int damage)
     {
         Health -= damage;
+        Renderer.material.DOKill(true);
+        transform.DOKill(true);
+
         Renderer.material
             .DOColor(Color.red, .2f)
             .SetLoops(2, LoopType.Yoyo)

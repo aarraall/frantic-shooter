@@ -1,7 +1,7 @@
 using RotaryHeart.Lib.SerializableDictionary;
 using UnityEngine;
 
-[CreateAssetMenu()]
+[CreateAssetMenu(fileName = nameof(WeaponConfigData), menuName = "Config/LevelConfig")]
 public class GamewideConfigData : ScriptableObject
 {
     [field: SerializeField] public UpgradeTypeImageMap UpgradeTypeImageMap { get; set; }

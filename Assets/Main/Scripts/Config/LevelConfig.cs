@@ -1,6 +1,7 @@
 using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(fileName = nameof(WeaponConfigData), menuName = "Config/LevelConfig")]
+
 public class LevelConfig : ScriptableObject
 {
     [field: SerializeField] public int LevelID { get; set; }

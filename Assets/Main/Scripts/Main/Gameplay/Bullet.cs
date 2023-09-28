@@ -49,25 +49,6 @@ public class Bullet : MonoBehaviour
         transform.position += Time.deltaTime * TravelSpeed * _currentAttackDirection;
     }
 
-    public void OnBounce()
-    {
-        BounceAmount--;
-        if ( BounceAmount <= 0 )
-        {
-            ReturnToPool();
-            return;
-        }
-
-        // calculate with vector3.reflect and set new direction for the bullet
-
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (!other.CompareTag("InvisibleWall"))
-        { return; }
-
-        OnBounce();
-    }
 
     private void ReturnToPool()
     {
@@ -114,7 +95,7 @@ public class Bullet : MonoBehaviour
 
     private void Bounce(Vector3 intersectionPos)
     {
-        var reflectionVector = Vector3.Reflect(intersectionPos, transform.forward);
+        var reflectionVector = Vector3.Reflect(intersectionPos, _currentAttackDirection);
         SetCurrentMoveDirection(reflectionVector.normalized);
         if (BounceAmount == -1)
         {
