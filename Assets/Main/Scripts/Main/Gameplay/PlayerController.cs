@@ -1,3 +1,4 @@
+using PathCreation;
 using UnityEngine;
 using UnityEngine.Animations.Rigging;
 
@@ -22,11 +23,14 @@ public class PlayerController : MonoBehaviour
 
     Weapon _currentWeapon;
     float _fireCounter = 0;
+    Transform _levelParent;
 
     public Weapon Weapon => _currentWeapon;
 
-    public void Initialize()
+    public void Initialize(PathCreator pathCreator, Transform levelParent)
     {
+        _levelParent = levelParent;
+        movementHandler.SetPathCreator(pathCreator);
         SetState(State.Idle);
         OnTakeWeapon(Resources.Load<Weapon>(PrefabDB.k_pistol_prefab));
         Subscribe();
@@ -35,6 +39,7 @@ public class PlayerController : MonoBehaviour
     public void OnDestroy()
     {
         Unsubscribe();
+        
     }
 
     private void Subscribe()
@@ -69,7 +74,7 @@ public class PlayerController : MonoBehaviour
         }
 
         _currentWeapon = Instantiate(weapon);
-        _currentWeapon.Initialize(shootingPoint);
+        _currentWeapon.Initialize(shootingPoint, _levelParent);
         SetIK();
         SetWeaponPosition();
     }

@@ -15,6 +15,9 @@ public class MovementHandler : MonoBehaviour
     float leftClamp = -4f;
     float rightClamp = 4f;
     Joystick _joystick;
+    PathCreator _pathCreator;
+
+    float _initialDistanceTravelledOnPath;
 
     [Inject]
     public void Initialize(Joystick inputController)
@@ -23,6 +26,12 @@ public class MovementHandler : MonoBehaviour
         _transform = transform;
         _joystick.OnFingerTravel += OnJoystickTravel;
         _joystick.OnFingerUp += OnFingerUp;
+    }
+
+    public void SetPathCreator(PathCreator pathCreator)
+    {
+        _pathCreator = pathCreator;
+        _initialDistanceTravelledOnPath = _pathCreator.path.GetClosestDistanceAlongPath(transform.position);
     }
 
 
@@ -39,11 +48,27 @@ public class MovementHandler : MonoBehaviour
 
     public void MoveAlongWithPath()
     {
+        PathMovement();
+    }
+
+    private void StraightMove()
+    {
         Vector3 distanceTravelled = speed * Time.deltaTime * Vector3.forward;
 
         _transform.position += distanceTravelled + _joystickOutput;
-        var clampedX = transform.position.x;
-        clampedX = Mathf.Clamp(clampedX, leftClamp, rightClamp);
+        var clampedX = _transform.position.x;
+        Mathf.Clamp(clampedX, leftClamp, rightClamp);
 
+        _transform.position = new Vector3(clampedX, _transform.position.y, _transform.position.z);
+    }
+
+    private void PathMovement()
+    {
+        if (_pathCreator == null) return;
+
+        _initialDistanceTravelledOnPath -= speed * Time.deltaTime;
+        _transform.position -=  _pathCreator.path.GetDirectionAtDistance(_initialDistanceTravelledOnPath, EndOfPathInstruction.Stop) * Time.deltaTime * speed;
+        _transform.position += _joystickOutput;
+        _transform.position = new Vector3(Mathf.Clamp(_transform.position.x, leftClamp, rightClamp), _transform.position.y, _transform.position.z);
     }
 }

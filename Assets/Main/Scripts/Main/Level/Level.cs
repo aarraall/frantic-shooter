@@ -1,3 +1,4 @@
+using PathCreation;
 using PathCreation.Examples;
 using UnityEngine;
 using Zenject;
@@ -13,8 +14,9 @@ public class Level : MonoBehaviour
     }
 
     [SerializeField] Transform playerSpawnPoint, finishPoint;
-    [field: SerializeField] public float[] UpgradeTriggerPercentages { get; set; }
-    [field: SerializeField] public RoadMeshCreator RoadMeshCreator { get; set; }
+    [field: SerializeField] public float[] UpgradeTriggerPercentages { get; private set; }
+    [field: SerializeField] public RoadMeshCreator RoadMeshCreator { get; private set; }
+    [field: SerializeField] public PathCreator PathCreator { get; private set; }
 
     PlayerController _playerInstance;
     float _distanceBetweenStartAndFinish;
@@ -34,7 +36,7 @@ public class Level : MonoBehaviour
 
         _playerInstance = Instantiate(Resources.Load<PlayerController>(PrefabDB.k_char_mousey_prefab), transform);
         _playerInstance.transform.SetPositionAndRotation(playerSpawnPoint.position, Quaternion.identity);
-        _playerInstance.Initialize();
+        _playerInstance.Initialize(PathCreator, transform);
 
         _cameraService.FollowTarget(_playerInstance.transform);
         _cameraService.LookAtTarget(_playerInstance.transform);
