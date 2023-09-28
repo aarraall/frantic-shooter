@@ -1,4 +1,5 @@
 using Cinemachine;
+using PathCreation.Examples;
 using System;
 using System.Collections;
 using System.Linq;
@@ -19,6 +20,8 @@ public class Level : MonoBehaviour
     [SerializeField] PlayerController playerPrefab; // can be injected through GameManager or LevelManager?
     [field: SerializeField] public float[] UpgradeTriggerPercentages { get; set; }
 
+    [field: SerializeField] public RoadMeshCreator RoadMeshCreator { get; set; }
+
     PlayerController _playerInstance;
     float _distanceBetweenStartAndFinish;
     int _nextUpgradeCheckpointIndex = 0;
@@ -34,6 +37,7 @@ public class Level : MonoBehaviour
         followCam.LookAt = _playerInstance.transform;
         _playerInstance.Initialize(inputController);
         _distanceBetweenStartAndFinish = Vector3.Distance(playerSpawnPoint.position, finishPoint.position);
+        RoadMeshCreator.TriggerUpdate();
         _state = State.Initialized;
     }
 

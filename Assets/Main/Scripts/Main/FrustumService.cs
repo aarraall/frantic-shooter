@@ -19,7 +19,7 @@ public class FrustumService : MonoBehaviour
     }
 
 
-    public Vector3 GetClosestFrustumPoint(Vector3 point)
+    public Vector3 GetClosestFrustumPoint(Vector3 point, bool checkPositiveSide = false)
     {
         float distance = float.PositiveInfinity;
         Vector3 closestPoint = Vector3.zero;
@@ -27,9 +27,15 @@ public class FrustumService : MonoBehaviour
         foreach (Plane plane in _cameraFrustum)
         {
             var closestPointOnPlane = plane.ClosestPointOnPlane(point);
+            var pointOnPositiveSide = true;
+
+            if (checkPositiveSide)
+            {
+                pointOnPositiveSide = plane.GetSide(point);
+            }
             var distanceToPlane = Vector3.Distance(point, closestPointOnPlane);
 
-            if (distanceToPlane < distance)
+            if (distanceToPlane < distance && pointOnPositiveSide)
             {
                 distance = distanceToPlane;
                 closestPoint = closestPointOnPlane;
@@ -44,15 +50,15 @@ public class FrustumService : MonoBehaviour
     /// If so, it returns intersectionPoint
     /// </summary>
     /// <param name="point"></param>
-    /// <param name="threshold"></param>
+    /// <param name="radius"></param>
     /// <param name="intersectPoint"></param>
     /// <returns></returns>
-    public bool IsIntersecting(Vector3 point, float threshold, out Vector3 intersectionPoint)
+    public bool IsIntersecting(Vector3 point, float radius, out Vector3 intersectionPoint)
     {
         intersectionPoint = Vector3.zero;
-        var closestFrustumPoint = GetClosestFrustumPoint(point);
+        var closestFrustumPoint = GetClosestFrustumPoint(point, true);
 
-        if (Vector3.Distance(point, closestFrustumPoint) <= threshold)
+        if (Vector3.Distance(point, closestFrustumPoint) <= radius)
         {
             intersectionPoint = closestFrustumPoint;
             return true;

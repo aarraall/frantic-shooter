@@ -76,7 +76,9 @@ public class Bullet : MonoBehaviour
             return;
         }
 
-        if (!FrustumService.Instance.IsIntersecting(transform.position, _bulletAssetTransform.localScale.y / 2, out var intersectionPoint))
+        var radius = _bulletAssetTransform.localScale.y / 2;
+
+        if (!FrustumService.Instance.IsIntersecting(transform.position, radius, out var intersectionPoint))
         {
             return;
         }

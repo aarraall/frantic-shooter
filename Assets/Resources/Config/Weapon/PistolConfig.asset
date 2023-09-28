@@ -135,9 +135,9 @@ MonoBehaviour:
         elementIcon: {fileID: 0}
       reqReferences: {fileID: 0}
       isExpanded: 1
-      _keyValues: 01000000
-      _keys: 01000000
-      _values: 00000000
+      _keyValues: 010000000200000003000000
+      _keys: 010000000200000003000000
+      _values: ffffffffffffffffffffffff
   <WeaponPositionDataProperty>k__BackingField:
     <Position>k__BackingField: {x: -0.083, y: 0.137, z: 0.036}
     <RotationEuler>k__BackingField: {x: 82.21593, y: 95.54619, z: 195.09181}
@@ -148,5 +148,5 @@ MonoBehaviour:
     <RightHandIKTargetRotationEuler>k__BackingField: {x: 81.80298, y: 90.313194, z: 83.87144}
   <BulletPrefab>k__BackingField: {fileID: 9050773002423567077, guid: a9e63abe962cc454cb8126fcbd959198, type: 3}
   <AttackFormationAngleY>k__BackingField: 30
-  <BulletTravelSpeed>k__BackingField: 20
-  <BulletLifeTime>k__BackingField: 1
+  <BulletTravelSpeed>k__BackingField: 15
+  <BulletLifeTime>k__BackingField: 5
