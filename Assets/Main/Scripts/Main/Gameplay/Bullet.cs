@@ -2,6 +2,7 @@ using PathCreation;
 using System;
 using UnityEngine;
 using UnityEngine.Pool;
+using Zenject;
 
 public class Bullet : MonoBehaviour
 {
@@ -14,11 +15,13 @@ public class Bullet : MonoBehaviour
     float _currentLifeTime;
 
     IObjectPool<Bullet> _pool;
+    [Inject] FrustumService _frustumService;
 
     private bool IsDead => _currentLifeTime <= 0;
     private int _currentBounceAmount = 0;
     Vector3 _currentAttackDirection;
     Weapon _weapon;
+
 
 
 
@@ -78,7 +81,7 @@ public class Bullet : MonoBehaviour
 
         var radius = _bulletAssetTransform.localScale.y / 2;
 
-        if (!FrustumService.Instance.IsIntersecting(transform.position, radius, out var intersectionPoint))
+        if (!_frustumService.IsIntersecting(transform.position, radius, out var intersectionPoint))
         {
             return;
         }

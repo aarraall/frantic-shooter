@@ -1,23 +1,10 @@
 using UnityEngine;
+using Zenject;
 
 public class FrustumService : MonoBehaviour
 {
-    Camera _camera;
+    [Inject] Camera _camera;
     Plane[] _cameraFrustum;
-
-    public static FrustumService Instance;
-
-    private void Awake()
-    {
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
-    }
-
-    private void Start()
-    {
-        _camera = Camera.main;
-    }
-
 
     public Vector3 GetClosestFrustumPoint(Vector3 point, bool checkPositiveSide = false)
     {
@@ -71,6 +58,7 @@ public class FrustumService : MonoBehaviour
 
     private void Update()
     {
+        if (_camera == null) return;
         _cameraFrustum = GeometryUtility.CalculateFrustumPlanes(_camera);
     }
 }

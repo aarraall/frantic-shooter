@@ -1544,6 +1544,7 @@ GameObject:
   - component: {fileID: 3585306412693042151}
   - component: {fileID: 7343662863650220617}
   - component: {fileID: 593797938402316829}
+  - component: {fileID: 3596109972615869880}
   m_Layer: 0
   m_Name: debug-player
   m_TagString: Untagged
@@ -1588,7 +1589,6 @@ MonoBehaviour:
   rightHandTransform: {fileID: 7190182074225606368}
   leftHandIK: {fileID: 6999475310513637846}
   rightHandIk: {fileID: 6689136648526436640}
-  initialWeaponPrefab: {fileID: -6002227444897802198, guid: 7618406f035e17a4e80095321a375ae4, type: 3}
 --- !u!114 &7343662863650220617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1627,8 +1627,21 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Constraints: 126
+  m_CollisionDetection: 3
+--- !u!114 &3596109972615869880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5955912178602915848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 717a02054ef2699498e6bd4234fd7995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _containerSource: 0
 --- !u!1 &6018168515665409118
 GameObject:
   m_ObjectHideFlags: 0

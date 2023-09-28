@@ -1,10 +1,6 @@
-using Cinemachine;
 using PathCreation.Examples;
-using System;
-using System.Collections;
-using System.Linq;
 using UnityEngine;
-using UnityEngine.Pool;
+using Zenject;
 
 public class Level : MonoBehaviour
 {
@@ -17,9 +13,7 @@ public class Level : MonoBehaviour
     }
 
     [SerializeField] Transform playerSpawnPoint, finishPoint;
-    [SerializeField] PlayerController playerPrefab; // can be injected through GameManager or LevelManager?
     [field: SerializeField] public float[] UpgradeTriggerPercentages { get; set; }
-
     [field: SerializeField] public RoadMeshCreator RoadMeshCreator { get; set; }
 
     PlayerController _playerInstance;
@@ -27,15 +21,23 @@ public class Level : MonoBehaviour
     int _nextUpgradeCheckpointIndex = 0;
     State _state = State.None;
 
+    PopupManager _popupManager;
+    CameraService _cameraService;
+
     public PlayerController PlayerInstance => _playerInstance;
 
-    public void Initialize(Joystick inputController, CinemachineVirtualCameraBase followCam)
+    [Inject]
+    public void Initialize(PopupManager popupManager, CameraService cameraService)
     {
-        _playerInstance = Instantiate(playerPrefab, transform);
+        _popupManager = popupManager;
+        _cameraService = cameraService;
+
+        _playerInstance = Instantiate(Resources.Load<PlayerController>(PrefabDB.k_char_mousey_prefab), transform);
         _playerInstance.transform.SetPositionAndRotation(playerSpawnPoint.position, Quaternion.identity);
-        followCam.Follow = _playerInstance.transform;
-        followCam.LookAt = _playerInstance.transform;
-        _playerInstance.Initialize(inputController);
+        _playerInstance.Initialize();
+
+        _cameraService.FollowTarget(_playerInstance.transform);
+        _cameraService.LookAtTarget(_playerInstance.transform);
         _distanceBetweenStartAndFinish = Vector3.Distance(playerSpawnPoint.position, finishPoint.position);
         RoadMeshCreator.TriggerUpdate();
         _state = State.Initialized;
@@ -50,13 +52,13 @@ public class Level : MonoBehaviour
     {
         _playerInstance.SetState(PlayerController.State.Idle);
         _state = State.Paused;
-        PopupManager.Instance.OpenPopup(typeof(UpgradePopup));
+        _popupManager.OpenPopup(new PopupBase.ModelBase(PrefabDB.k_ui_upgrade_prefab));
     }
     private void FinishLevel()
     {
         _playerInstance.SetState(PlayerController.State.Happy);
         _state = State.Paused;
-        PopupManager.Instance.OpenPopup(typeof(WinPopup));
+        _popupManager.OpenPopup(new PopupBase.ModelBase(PrefabDB.k_ui_win_prefab));
     }
 
 
@@ -86,8 +88,6 @@ public class Level : MonoBehaviour
         _nextUpgradeCheckpointIndex++;
         PauseLevel();
     }
-
-   
 
     private bool Approximately(float a, float b, float tolerance)
     {

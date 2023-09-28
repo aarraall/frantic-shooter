@@ -2,6 +2,7 @@ using UnityEngine;
 using PathCreation;
 using PathCreation.Examples;
 using System;
+using Zenject;
 
 public class MovementHandler : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class MovementHandler : MonoBehaviour
     float rightClamp = 4f;
     Joystick _joystick;
 
-
+    [Inject]
     public void Initialize(Joystick inputController)
     {
         _joystick = inputController;

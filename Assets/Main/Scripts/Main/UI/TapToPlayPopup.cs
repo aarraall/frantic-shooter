@@ -6,7 +6,7 @@ public class TapToPlayPopup : PopupBase
 {
     public void OnClickTap()
     {
-        LevelManager.Instance.StartLevel();
+        _levelManager.StartLevel();
         Hide();
     }
 }

@@ -6,6 +6,6 @@ public class DefeatPopup : PopupBase
 {
     public void RestartLevel()
     {
-        LevelManager.Instance.RestartLevel();
+        _levelManager.RestartLevel();
     }
 }

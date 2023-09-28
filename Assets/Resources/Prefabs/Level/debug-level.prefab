@@ -502,6 +502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4917055682001187593}
   - component: {fileID: 1164579286894536569}
+  - component: {fileID: 4502434536036708329}
   m_Layer: 0
   m_Name: debug-level
   m_TagString: Untagged
@@ -545,7 +546,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpawnPoint: {fileID: 7459038577342911341}
   finishPoint: {fileID: 3390401633959485693}
-  playerPrefab: {fileID: 3585306412693042151, guid: 05d75327bdec890479078eaff1f8a02a, type: 3}
   <UpgradeTriggerPercentages>k__BackingField:
   - 0.05
   - 0.18
@@ -554,6 +554,19 @@ MonoBehaviour:
   - 0.57
   - 0.7
   <RoadMeshCreator>k__BackingField: {fileID: 5056889848036769518}
+--- !u!114 &4502434536036708329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2949100405561787070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 717a02054ef2699498e6bd4234fd7995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _containerSource: 0
 --- !u!1 &3094782064947708596
 GameObject:
   m_ObjectHideFlags: 0

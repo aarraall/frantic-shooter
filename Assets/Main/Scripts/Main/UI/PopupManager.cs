@@ -5,42 +5,28 @@ using UnityEngine;
 
 public class PopupManager : MonoBehaviour
 {
-    [SerializeField] private List<PopupBase> popups;
-    public static PopupManager Instance;
-
-    private void Awake()
+    List<PopupBase> _activePopups = new List<PopupBase> ();
+    public void OpenPopup(PopupBase.ModelBase model)
     {
-        Instance = this;
         HideAll();
-    }
-
-    public void OpenPopup(Type popupType)
-    {
-        // TODO : Usually I create a popup system that supports many async popup queries by enqueueing them
-        // I can evolve this to smh like that later
-
-        HideAll();
-        var popup = popups.FirstOrDefault(popup => popup.GetType() == popupType);
+        PopupBase popup = Instantiate(Resources.Load<PopupBase>(model.PrefabName));
+        popup.transform.SetParent(transform);
+        popup.Initialize(model);
         popup.Show();
     }
 
     public void ClosePopup(Type popupType)
     {
-        var popup = popups.FirstOrDefault(popup => popup.GetType() == popupType);
+        var popup = _activePopups.FirstOrDefault(popup => popup.GetType() == popupType);
         popup.Hide();
+        Destroy(popup);
     }
 
     public void HideAll()
     {
-        foreach (var popup in popups)
+        foreach (var popup in _activePopups)
         {
             popup.Hide();
         }
-    }
-
-
-    private void Reset()
-    {
-        popups = GetComponentsInChildren<PopupBase>(true).ToList();
     }
 }

@@ -3,11 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Pool;
+using Zenject;
 
 public class BulletTester : MonoBehaviour
 {
     public Bullet bullet;
     IObjectPool<Bullet> bulletPool;
+
     // Start is called before the first frame update
 
     float timer = 0;

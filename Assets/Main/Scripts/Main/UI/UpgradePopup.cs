@@ -14,14 +14,14 @@ public partial class UpgradePopup : PopupBase
     }
     public void Initialize()
     {
-        var upgradeOffers = LevelManager.Instance.PlayerController.Weapon.ReturnThreeUpgrades();
+        var upgradeOffers = _levelManager.PlayerController.Weapon.ReturnThreeUpgrades();
 
         var noUpgrades = upgradeOffers == null || upgradeOffers.Count == 0;
 
         if (noUpgrades)
         {
             Hide();
-            LevelManager.Instance.StartLevel();
+            _levelManager.StartLevel();
             return;
         }
         var idleButtonCount = upgradeButtons.Count - upgradeOffers.Count;
@@ -49,9 +49,9 @@ public partial class UpgradePopup : PopupBase
 
     private void OnUpdateButtonClick(WeaponUpgradeType type)
     {
-        LevelManager.Instance.PlayerController.Weapon.UpgradeLevel(type);
+        _levelManager.PlayerController.Weapon.UpgradeLevel(type);
         Hide();
-        LevelManager.Instance.StartLevel();
+        _levelManager.StartLevel();
     }
 
     private void Reset()

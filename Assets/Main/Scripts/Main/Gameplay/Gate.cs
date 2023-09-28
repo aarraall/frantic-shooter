@@ -1,12 +1,13 @@
 using DG.Tweening;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 
 public class Gate : MonoBehaviour
 {
     [SerializeField] Transform weaponTransform;
     [SerializeField] Weapon weapon;
+
+    [Inject] LevelManager _levelManager;
 
     private void Start()
     {
@@ -23,6 +24,6 @@ public class Gate : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-       LevelManager.Instance.PlayerController.OnTakeWeapon(weapon);
+        _levelManager.PlayerController.OnTakeWeapon(weapon);
     }
 }

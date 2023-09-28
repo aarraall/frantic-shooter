@@ -20,18 +20,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform rightHandTransform;
     [SerializeField] private TwoBoneIKConstraint leftHandIK, rightHandIk;
 
-    [SerializeField] private Weapon initialWeaponPrefab;
-
     Weapon _currentWeapon;
     float _fireCounter = 0;
 
     public Weapon Weapon => _currentWeapon;
 
-    public void Initialize(Joystick inputController)
+    public void Initialize()
     {
         SetState(State.Idle);
-        OnTakeWeapon(initialWeaponPrefab);
-        movementHandler.Initialize(inputController);
+        OnTakeWeapon(Resources.Load<Weapon>(PrefabDB.k_pistol_prefab));
         Subscribe();
     }
 
