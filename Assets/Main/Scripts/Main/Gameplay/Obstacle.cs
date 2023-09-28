@@ -1,13 +1,22 @@
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
     [field: SerializeField] public MeshRenderer Renderer { get; private set; }
 
-    [field: SerializeField] public int Health {  get; set; }
+    public int Health {  get; set; }
 
     [field: SerializeField] public Collider Collider { get; private set; }
+
+    [field: SerializeField] public TMP_Text HPText{ get; private set; }
+
+    private void Awake()
+    {
+        Health = Random.Range(20, 50);
+        HPText.text = Health.ToString();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -37,11 +46,14 @@ public class Obstacle : MonoBehaviour
             return;
 
         Renderer.material
-            .DOColor(Color.red, .2f)
+            .DOColor(Color.yellow, .2f)
             .SetLoops(2, LoopType.Yoyo)
             .SetEase(Ease.OutBack);
 
-        transform.DOShakeScale(.2f);
+        transform.DOShakeScale(.2f, .5f, 5);
+
+        HPText.text = Health.ToString();
+
 
         if (Health <= 0)
         {
