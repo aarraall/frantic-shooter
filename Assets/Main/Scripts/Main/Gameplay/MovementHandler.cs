@@ -68,7 +68,7 @@ public class MovementHandler : MonoBehaviour
 
         _initialDistanceTravelledOnPath -= speed * Time.deltaTime;
         _transform.position -=  _pathCreator.path.GetDirectionAtDistance(_initialDistanceTravelledOnPath, EndOfPathInstruction.Stop) * Time.deltaTime * speed;
-        _transform.position += _joystickOutput;
+        _transform.position += _joystickOutput * speed / 2f;
         _transform.position = new Vector3(Mathf.Clamp(_transform.position.x, leftClamp, rightClamp), _transform.position.y, _transform.position.z);
     }
 }

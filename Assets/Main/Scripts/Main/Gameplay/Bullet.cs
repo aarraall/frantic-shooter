@@ -42,14 +42,14 @@ public class Bullet : MonoBehaviour
 
     public void Fire()
     {
-        _currentLifeTime -= Time.deltaTime;
+        _currentLifeTime -= Time.fixedDeltaTime;
         if (IsDead)
         {
             ReturnToPool();
             return;
         }
 
-        transform.position += Time.deltaTime * TravelSpeed * _currentAttackDirection;
+        transform.position += Time.fixedDeltaTime * TravelSpeed * _currentAttackDirection;
     }
 
 
@@ -85,8 +85,9 @@ public class Bullet : MonoBehaviour
         {
             return;
         }
+        var reflectionVector = -Vector3.Reflect(_currentAttackDirection, intersectionPoint.normalized);
 
-        Bounce(intersectionPoint);
+        Bounce(reflectionVector);
     }
     public void ObjectBounce(Vector3 intersectionPos)
     {
@@ -95,13 +96,14 @@ public class Bullet : MonoBehaviour
             return;
         }
 
-        Bounce(intersectionPos);
+        var reflectionVector = Vector3.Reflect(_currentAttackDirection, intersectionPos.normalized);
+
+        Bounce(reflectionVector);
     }
 
-    private void Bounce(Vector3 intersectionPos)
+    private void Bounce(Vector3 reflectionVector)
     {
-        var reflectionVector = Vector3.Reflect(intersectionPos, _currentAttackDirection);
-        SetCurrentMoveDirection(reflectionVector.normalized);
+        SetCurrentMoveDirection(reflectionVector);
         if (BounceAmount == -1)
         {
             _currentLifeTime += LifeTime / 2;
@@ -112,7 +114,7 @@ public class Bullet : MonoBehaviour
     }
 
     //Control movement from weapon instead of individual updates 
-    private void Update()
+    private void FixedUpdate()
     {
         Fire();
         FrustumBounce();

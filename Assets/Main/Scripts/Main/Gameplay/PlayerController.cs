@@ -124,7 +124,7 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (PlayerState != State.RunningAndShooting) return;
         if (movementHandler == null) return;

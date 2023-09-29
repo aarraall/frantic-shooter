@@ -2,28 +2,24 @@ using System;
 using UnityEngine;
 using Zenject;
 
-public class FrustumService : ITickable, IDisposable
+public class FrustumService : IFixedTickable, IDisposable
 {
     [Inject] Camera _camera;
     Plane[] _cameraFrustum;
 
-    public Vector3 GetClosestFrustumPoint(Vector3 point, bool checkPositiveSide = false)
+    public Vector3 GetClosestFrustumPoint(Vector3 point)
     {
         float distance = float.PositiveInfinity;
         Vector3 closestPoint = Vector3.zero;
 
-        foreach (Plane plane in _cameraFrustum)
+        for (int i = 0; i < _cameraFrustum.Length; i++)
         {
-            var closestPointOnPlane = plane.ClosestPointOnPlane(point);
-            var pointOnPositiveSide = true;
+            Plane plane = _cameraFrustum[i];
 
-            if (checkPositiveSide)
-            {
-                pointOnPositiveSide = plane.GetSide(point);
-            }
+            var closestPointOnPlane = plane.ClosestPointOnPlane(point);
             var distanceToPlane = Vector3.Distance(point, closestPointOnPlane);
 
-            if (distanceToPlane < distance && pointOnPositiveSide)
+            if (distanceToPlane < distance)
             {
                 distance = distanceToPlane;
                 closestPoint = closestPointOnPlane;
@@ -44,7 +40,7 @@ public class FrustumService : ITickable, IDisposable
     public bool IsIntersecting(Vector3 point, float radius, out Vector3 intersectionPoint)
     {
         intersectionPoint = Vector3.zero;
-        var closestFrustumPoint = GetClosestFrustumPoint(point, true);
+        var closestFrustumPoint = GetClosestFrustumPoint(point);
 
         if (Vector3.Distance(point, closestFrustumPoint) <= radius)
         {
@@ -56,15 +52,16 @@ public class FrustumService : ITickable, IDisposable
 
     }
 
-    public void Tick()
-    {
-        if (_camera == null) return;
-        _cameraFrustum = GeometryUtility.CalculateFrustumPlanes(_camera);
-    }
-
     public void Dispose()
     {
         _camera = null;
         _cameraFrustum = null;
     }
+
+    public void FixedTick()
+    {
+        if (_camera == null) return;
+        _cameraFrustum = GeometryUtility.CalculateFrustumPlanes(_camera);
+    }
+
 }
